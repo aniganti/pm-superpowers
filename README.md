@@ -22,6 +22,8 @@ Product strategy skills grounded in structured frameworks for competitive analys
 
 **Skills:**
 
+**Strategic Advisor**
+
 | Skill | Description |
 |-------|-------------|
 | `product-strategy` | 6-step interactive framework: market analysis → problem space → strategic pillars (VRIO) → design/technical alignment → vision/mission/goals → communicate |
@@ -29,6 +31,11 @@ Product strategy skills grounded in structured frameworks for competitive analys
 | `vrio-analysis` | VRIO framework for evaluating competitive advantages (Value, Rarity, Imitability, Organization) |
 | `strategic-moat` | Defensibility assessment across 8 moat types including feedback loops and ecosystem lock-in |
 | `product-ecosystem` | Aggregation theory and value chain analysis for ecosystem strategy |
+
+**Planning & Execution**
+
+| Skill | Description |
+|-------|-------------|
 | `pre-mortem` | Launch readiness risk analysis using Tigers/Paper Tigers/Elephants framework |
 
 **Commands:**
