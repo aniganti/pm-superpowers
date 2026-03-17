@@ -1,0 +1,25 @@
+{
+  "name": "pm-superpowers",
+  "owner": {
+    "name": "Ani Ganti",
+    "url": "https://github.com/aniganti"
+  },
+  "metadata": {
+    "description": "Claude Code plugin marketplace with skills and tools for product managers",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "pm-product-strategy",
+      "description": "Product strategy skills: 6-step strategy framework, competitive analysis, VRIO, strategic moats, ecosystem strategy, and pre-mortem risk analysis",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ani Ganti",
+        "url": "https://github.com/aniganti"
+      },
+      "homepage": "https://github.com/aniganti/pm-superpowers",
+      "tags": ["product-management", "strategy", "competitive-analysis", "vrio", "pre-mortem"],
+      "source": "./plugins/pm-product-strategy"
+    }
+  ]
+}
