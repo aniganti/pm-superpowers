@@ -35,10 +35,6 @@ Aggregation theory analysis for ecosystem strategy. Maps value chains, evaluates
 
 Launch readiness risk analysis. Imagines launch failure and works backward to categorize risks as Tigers (real), Paper Tigers (overblown), or Elephants (unspoken). Creates action plans for launch-blocking risks.
 
-## Commands
-
-- `/quick-assess` — Lightweight competitive landscape check
-
 ## Sub-Agents
 
 - **competitive-researcher** — Automated competitive intelligence gathering via web search. Spawned by the strategy and competitive-landscape skills.
