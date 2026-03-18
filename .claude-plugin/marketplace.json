@@ -10,7 +10,7 @@
   },
   "plugins": [
     {
-      "name": "pm-product-strategy",
+      "name": "pm-superpowers",
       "description": "Product strategy skills: 6-step strategy framework, competitive analysis, VRIO, strategic moats, ecosystem strategy, and pre-mortem risk analysis",
       "version": "1.0.0",
       "author": {
@@ -19,7 +19,7 @@
       },
       "homepage": "https://github.com/aniganti/pm-superpowers",
       "tags": ["product-management", "strategy", "competitive-analysis", "vrio", "pre-mortem"],
-      "source": "./plugins/pm-product-strategy"
+      "source": "./plugins/pm-superpowers"
     }
   ]
 }

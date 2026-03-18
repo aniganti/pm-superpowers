@@ -1,4 +1,4 @@
-# pm-product-strategy
+# pm-superpowers
 
 Product strategy skills for PMs, grounded in structured frameworks for competitive analysis, defensibility assessment, and strategic planning.
 

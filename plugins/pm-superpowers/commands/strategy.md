@@ -17,7 +17,7 @@ Run the complete product strategy analysis using the 6-step framework:
 ## Usage
 
 ```
-/pm-product-strategy:strategy [topic or existing strategy doc path]
+/pm-superpowers:strategy [topic or existing strategy doc path]
 ```
 
 ## What You Get
@@ -31,7 +31,7 @@ A comprehensive product strategy document saved to `docs/strategies/YYYY-MM-DD-<
 
 ## Next Steps After Running
 
-- Run `/pm-product-strategy:quick-assess` for a focused competitive deep-dive on specific competitors
+- Run `/pm-superpowers:quick-assess` for a focused competitive deep-dive on specific competitors
 - Use the `strategic-moat` skill to assess defensibility in detail
 - Use the `product-ecosystem` skill to evaluate aggregation and ecosystem opportunities
 - Use the `pre-mortem` skill to stress-test launch readiness

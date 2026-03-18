@@ -11,12 +11,12 @@ claude plugin marketplace add aniganti/pm-superpowers
 Then install individual plugins:
 
 ```bash
-claude plugin install pm-product-strategy
+claude plugin install pm-superpowers
 ```
 
 ## Plugins
 
-### pm-product-strategy
+### pm-superpowers
 
 Product strategy skills grounded in structured frameworks for competitive analysis, defensibility assessment, and strategic planning.
 

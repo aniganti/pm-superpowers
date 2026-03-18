@@ -14,7 +14,7 @@ Run a focused competitive landscape analysis:
 ## Usage
 
 ```
-/pm-product-strategy:quick-assess [product or company name]
+/pm-superpowers:quick-assess [product or company name]
 ```
 
 ## What You Get
