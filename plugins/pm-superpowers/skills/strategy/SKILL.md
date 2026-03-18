@@ -1,5 +1,5 @@
 ---
-name: product-strategy
+name: strategy
 description: >
   Interactive 6-step product strategy framework grounded in Rumelt's strategy kernel
   (Why/What/How). Guides PMs through market analysis, problem definition, strategic

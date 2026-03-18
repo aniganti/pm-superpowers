@@ -4,7 +4,7 @@ Product strategy skills for PMs, grounded in structured frameworks for competiti
 
 ## Skills
 
-### product-strategy (Main Orchestrator)
+### strategy (Main Orchestrator)
 
 The flagship skill. Guides PMs through a 6-step interactive framework to develop a comprehensive product strategy:
 
@@ -37,9 +37,8 @@ Launch readiness risk analysis. Imagines launch failure and works backward to ca
 
 ## Commands
 
-- `/strategy` — Full 6-step product strategy workflow
 - `/quick-assess` — Lightweight competitive landscape check
 
 ## Sub-Agents
 
-- **competitive-researcher** — Automated competitive intelligence gathering via web search. Spawned by the product-strategy and competitive-landscape skills.
+- **competitive-researcher** — Automated competitive intelligence gathering via web search. Spawned by the strategy and competitive-landscape skills.

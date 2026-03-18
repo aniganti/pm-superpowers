@@ -25,7 +25,7 @@ A competitive intelligence brief with:
 - Positioning map on key dimensions
 - Differentiation gaps and whitespace opportunities
 
-## When to Use This vs /strategy
+## When to Use This vs the Strategy Skill
 
 - Use `/quick-assess` when you need a fast competitive read — maybe before a stakeholder meeting or to validate assumptions about competitors
-- Use `/strategy` when you need the full 6-step product strategy analysis
+- Use the `strategy` skill when you need the full 6-step product strategy analysis
