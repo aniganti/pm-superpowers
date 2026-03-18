@@ -1,11 +1,11 @@
 {
   "name": "pm-product-strategy",
   "version": "1.0.0",
-  "description": "Product strategy skills for PMs: 6-step strategy framework, competitive landscape analysis, VRIO, strategic moats, product ecosystem strategy, and pre-mortem risk analysis",
+  "description": "Product strategy skills for PMs: 6-step strategy framework, competitive landscape analysis, VRIO, strategic moats, product ecosystem strategy, pre-mortem risk analysis, and AI prompt builder",
   "author": {
     "name": "Ani Ganti",
     "url": "https://github.com/aniganti"
   },
-  "keywords": ["product-strategy", "competitive-analysis", "vrio", "moats", "ecosystem", "pre-mortem"],
+  "keywords": ["product-strategy", "competitive-analysis", "vrio", "moats", "ecosystem", "pre-mortem", "prompt-builder"],
   "skills": "./skills/"
 }
