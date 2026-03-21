@@ -32,11 +32,6 @@ Meanwhile, AI coding tools like Claude Code are reshaping how technical PMs work
 
 ### Slash commands
 
-| Command | What it does |
-|---|---|
-| `/strategy` | Run the full 6-step product strategy workflow |
-| `/quick-assess` | Lightweight competitive landscape check |
-
 ### Sub-agents
 
 | Agent | What it does |
