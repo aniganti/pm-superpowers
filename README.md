@@ -76,21 +76,6 @@ Each skill follows a consistent structure: **domain context → instructions →
 
 **Interactive, not one-shot.** The `product-strategy` skill is a 6-step *session*, not a single prompt. It gathers context, asks follow-up questions, runs competitive research via sub-agent, and builds the strategy incrementally. This matches how real strategy work happens — iteratively, with judgment at each step.
 
-## Tradeoffs and limitations
-
-- **Claude Code only (for now).** The plugin architecture is built for Claude Code's marketplace. It doesn't work in ChatGPT, Cursor, or other AI tools without adaptation. Expanding to other platforms (Codex, Gemini CLI) would require adding install paths similar to what [obra/superpowers](https://github.com/obra/superpowers) does.
-- **Strategy breadth vs. depth.** The current skill set focuses on competitive strategy and launch readiness. It doesn't yet cover discovery (user research synthesis), metrics/analytics, pricing strategy, or go-to-market planning. These are natural next additions.
-- **No persistence between sessions.** Each `/strategy` run starts fresh. There's no way to pick up a previous analysis or build on it over time. A future version could write outputs to a local `docs/strategy/` directory for continuity.
-- **Dependent on web search quality.** The `competitive-researcher` sub-agent's output is only as good as what it finds online. For niche or pre-launch markets, you'll need to supplement with your own research.
-
-## What I'd improve next
-
-1. **Add a `discovery` skill** — synthesize user research notes, interview transcripts, and support tickets into insight themes and opportunity areas
-2. **Persistent strategy docs** — auto-save each strategy session's output to a local directory so you can iterate across sessions
-3. **Metrics & goal-setting skill** — generate OKRs from strategy outputs, with leading/lagging indicator suggestions
-4. **Cross-platform support** — add install paths for Codex CLI, Gemini CLI, and Cursor
-5. **Example outputs** — publish sample strategy analyses so new users can see what the skills produce before installing
-
 ## Built by
 
 [Ani Ganti](https://github.com/aniganti) — Principal Product Manager at [Wrapbook](https://www.wrapbook.com), where I ship AI-powered payroll software for the entertainment industry. I built this because I wanted the strategic frameworks I use daily to work *inside* my AI coding workflow, not next to it.
