@@ -194,3 +194,54 @@ Ask the PM to reflect on:
 - Would you be comfortable if your most vulnerable user experienced every engagement tactic at full intensity?
 
 Flag any recommendations from the assessment that warrant ethical scrutiny and suggest healthier alternatives where appropriate.
+
+---
+
+## Stopping Conditions
+
+STOP and inform the PM if any of these conditions are met — do not proceed with assumptions:
+
+- **No product description.** STOP if the PM cannot describe what the product does and who uses it. Moat assessment without product context is speculation.
+- **No value proposition.** STOP if the PM cannot articulate the core value proposition. If they do not know why users choose their product, the moat assessment will be built on sand.
+- **No competitors identified.** STOP if the PM cannot name at least 2 competitors. Defensibility is relative — without knowing what you are defending against, the assessment is meaningless.
+
+---
+
+## Red Flags and Anti-Patterns
+
+NEVER tolerate these — push back directly:
+
+- **Inflated moat ratings.** NEVER accept a "Strong" rating without concrete, specific evidence. "We have great brand recognition" is not evidence. "We rank #1 in [specific category] on G2 with 500+ reviews and 4.8 average rating" is evidence.
+- **Conflating aspiration with reality.** If the PM describes moats they want to build rather than moats they have, reclassify them as "Emerging" or "None." Assess what exists today, then recommend how to deepen.
+- **Ignoring the ethical check.** The ethical check in Step 4 is NOT optional. NEVER skip it. If a moat-deepening strategy relies on dark patterns, manipulative engagement, or unreasonable friction to leave, flag it explicitly.
+- **Network effects without evidence.** Most products do not have true network effects. If the PM claims network effects, demand specific evidence: does adding one user measurably improve the experience for others? If not, it is not a network effect.
+- **Switching costs as a strategy.** High switching costs without high value delivery is a trap, not a moat. If the only reason users stay is because leaving is painful, the product is vulnerable to any competitor that makes migration easy.
+- **Rating all 8 moats.** Not every product has all 8 moat types. If a moat clearly does not apply (e.g., regulatory barriers for a consumer social app), rate it "None" and move on. Do not force-fit.
+
+---
+
+## Completion Requirements
+
+Before presenting the final moat assessment, verify ALL of the following:
+
+1. All 8 moat types assessed with explicit ratings (None/Emerging/Moderate/Strong)
+2. Every rating above "None" has specific evidence documented
+3. Every moat has at least one deepening opportunity identified
+4. Moat summary table is complete
+5. Top 3 recommendations are concrete and actionable (not generic)
+6. Overall defensibility verdict is honest — not a pep talk
+7. Ethical check section is present with genuine reflection, not a rubber stamp
+
+If any criterion is not met, do not finalize — inform the PM what is missing and continue the assessment.
+
+---
+
+## Workflow — Next Steps
+
+After completing the moat assessment, offer these natural next steps:
+
+1. **Build the full strategy** — "Would you like to use this moat analysis as a foundation for a comprehensive product strategy?" → Invoke the `strategy` skill.
+2. **Analyze the ecosystem** — "Would you like to map your product's value chain and identify ecosystem opportunities?" → Invoke the `product-ecosystem` skill.
+3. **Verify the output** — "Would you like me to run a quality verification on this assessment before you share it?" → Invoke the `verification` skill.
+
+**Full Strategy Pipeline**: competitive-landscape → vrio-analysis → **strategic-moat** → strategy → pre-mortem

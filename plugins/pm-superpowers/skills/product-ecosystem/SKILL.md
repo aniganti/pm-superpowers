@@ -180,3 +180,52 @@ The most promising loops identified, with a concrete next step for each.
 #### 6. Short-Term / Long-Term Alignment
 
 A brief assessment of whether current initiatives support the ecosystem vision, with any recommended adjustments.
+
+Save the ecosystem strategy to `docs/ecosystem-strategies/YYYY-MM-DD-ecosystem-strategy-[product-name].md`.
+
+---
+
+## Stopping Conditions
+
+STOP and inform the PM if any of these conditions are met — do not proceed with assumptions:
+
+- **No product description.** STOP if the PM cannot describe what their product does or what value it creates. Value chain mapping requires understanding the value being created.
+- **No knowledge of supply chain.** STOP if the PM has no awareness of who supplies inputs to their product (data, APIs, content, infrastructure). They need to understand their dependencies before mapping the ecosystem.
+- **No distribution understanding.** STOP if the PM cannot describe how users find and access their product. If they do not know their distribution channels, ecosystem strategy is premature.
+
+---
+
+## Red Flags and Anti-Patterns
+
+NEVER tolerate these — push back directly:
+
+- **Ecosystem fantasy.** If the PM describes an elaborate multi-product ecosystem but the company has one product and 20 employees, ground them. Flag the single-product reality and focus on value chain positioning first.
+- **Integration for integration's sake.** NEVER accept "we should integrate with X" without a strategic rationale. Every integration must answer: does this strengthen our user relationship, reduce supplier power, or create a closed loop?
+- **Ignoring supplier power.** If the PM's product depends heavily on a single supplier (e.g., one API provider, one data source) and they dismiss the risk, challenge them. Single points of failure in the value chain are existential risks.
+- **Conflating distribution with ecosystem.** Being available on multiple platforms is distribution, not an ecosystem. An ecosystem requires mutual reinforcement between products.
+- **Skipping the single-product flag.** If this is a single-product company, ALWAYS present the single-product flag. Do not pretend a single product is an ecosystem.
+
+---
+
+## Completion Requirements
+
+Before presenting the final ecosystem strategy, verify ALL of the following:
+
+1. Value chain diagram is complete with specific players identified at each stage
+2. At least 3 integration opportunities assessed with difficulty and strategic value ratings
+3. Portfolio coherence rated (or single-product flag raised)
+4. At least 2 closed-loop opportunities identified with strength assessment
+5. Short-term vs. long-term alignment assessment is present
+6. Replacement map table has at least 3 value chain players evaluated
+
+If any criterion is not met, do not finalize — inform the PM what is missing and continue the analysis.
+
+---
+
+## Workflow — Next Steps
+
+After completing the ecosystem strategy, offer these natural next steps:
+
+1. **Assess strategic moats** — "Would you like to evaluate your defensibility across 8 moat types, building on this ecosystem analysis?" → Invoke the `strategic-moat` skill.
+2. **Build the full strategy** — "Would you like to incorporate this ecosystem analysis into a comprehensive product strategy?" → Invoke the `strategy` skill.
+3. **Verify the output** — "Would you like me to run a quality verification on this ecosystem strategy?" → Invoke the `verification` skill.
