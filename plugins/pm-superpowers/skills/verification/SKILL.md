@@ -14,7 +14,7 @@ NO COMPLETION CLAIMS WITHOUT FRESH VERIFICATION EVIDENCE. This skill exists to p
 
 ## When to Use
 
-Invoke this skill after any document-producing skill (strategy, competitive-landscape, vrio-analysis, strategic-moat, product-ecosystem, pre-mortem) and before sharing the artifact with stakeholders.
+Invoke this skill after any document-producing skill (strategy, competitive-landscape, vrio-analysis, strategic-moat, product-ecosystem, pre-mortem, prioritization, decision-log, stakeholder-alignment, prompt-builder) and before sharing the artifact with stakeholders.
 
 ## Process
 
