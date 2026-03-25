@@ -217,7 +217,7 @@ NEVER tolerate these — push back directly:
 
 - **Inflated moat ratings.** NEVER accept a "Strong" rating without concrete, specific evidence. "We have great brand recognition" is not evidence. "We rank #1 in [specific category] on G2 with 500+ reviews and 4.8 average rating" is evidence.
 - **Conflating aspiration with reality.** If the PM describes moats they want to build rather than moats they have, reclassify them as "Emerging" or "None." Assess what exists today, then recommend how to deepen.
-- **Ignoring the ethical check.** The ethical check in Step 4 is NOT optional. NEVER skip it. If a moat-deepening strategy relies on dark patterns, manipulative engagement, or unreasonable friction to leave, flag it explicitly.
+- **Ignoring the ethical check.** The ethical check in Step 5 is NOT optional. NEVER skip it. If a moat-deepening strategy relies on dark patterns, manipulative engagement, or unreasonable friction to leave, flag it explicitly.
 - **Network effects without evidence.** Most products do not have true network effects. If the PM claims network effects, demand specific evidence: does adding one user measurably improve the experience for others? If not, it is not a network effect.
 - **Switching costs as a strategy.** High switching costs without high value delivery is a trap, not a moat. If the only reason users stay is because leaving is painful, the product is vulnerable to any competitor that makes migration easy.
 - **Rating all 8 moats.** Not every product has all 8 moat types. If a moat clearly does not apply (e.g., regulatory barriers for a consumer social app), rate it "None" and move on. Do not force-fit.
