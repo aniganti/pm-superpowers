@@ -131,7 +131,7 @@ Format the final output as follows:
 
 ### 8. Save the Output
 
-Save the pre-mortem analysis as `PreMortem-[product-name]-[date].md` in the current working directory or a location the PM specifies.
+Save the pre-mortem analysis to `docs/pre-mortems/YYYY-MM-DD-pre-mortem-[product-name].md`.
 
 ## Notes
 
@@ -139,3 +139,53 @@ Save the pre-mortem analysis as `PreMortem-[product-name]-[date].md` in the curr
 - **Involve cross-functional perspectives.** Encourage the PM to share the pre-mortem with engineering, design, marketing, sales, CS, and legal. Each function sees risks others miss.
 - **Recommend revisiting 2-3 weeks before launch** to verify that mitigations for Launch-Blocking Tigers are on track. If any are slipping, escalate immediately.
 - A pre-mortem is most valuable when done early enough to act on the findings. Do not wait until the week before launch.
+
+---
+
+## Stopping Conditions
+
+STOP and inform the PM if any of these conditions are met — do not proceed with assumptions:
+
+- **No launch scope.** STOP if no PRD, launch plan, or verbal description is provided and the PM cannot describe the product, target user, or launch timeline. A pre-mortem without a defined launch scope is theater.
+- **No success criteria.** STOP if the PM cannot define what success looks like. Without success criteria, you cannot meaningfully assess what failure looks like.
+- **Launch already happened.** If the product has already launched, this is a post-mortem, not a pre-mortem. Recommend a retrospective instead.
+
+---
+
+## Red Flags and Anti-Patterns
+
+NEVER tolerate these — push back directly:
+
+- **Paper Tiger without evidence.** NEVER let the PM classify a risk as Paper Tiger without specific evidence for why it is overblown. Optimism is not evidence. "I don't think that'll happen" is not a rationale — demand data, precedent, or structural reasons.
+- **No Launch-Blocking Tigers.** If the analysis produces zero Launch-Blocking Tigers, be skeptical. Either the launch is exceptionally well-prepared (rare) or the analysis is too optimistic. Challenge the PM: "Are you sure there is nothing that would stop this launch if left unaddressed?"
+- **Vague mitigations.** NEVER accept "we'll figure it out" or "we'll monitor it" as a mitigation for a Launch-Blocking Tiger. Mitigations must be concrete: specific action, specific owner, specific date.
+- **Missing owners.** Every Launch-Blocking Tiger action plan MUST have a named owner (function or person). "The team" is not an owner.
+- **Risk avoidance disguised as analysis.** If every risk is classified as "Track" or "Paper Tiger," the PM is avoiding hard conversations. Push back — some risks are real and urgent.
+- **Ignoring the "do nothing" risk.** ALWAYS consider: what happens if we delay the launch? Sometimes the biggest risk is not launching at all (competitive window closing, market timing, team morale).
+
+---
+
+## Completion Requirements
+
+Before saving the pre-mortem, verify ALL of the following:
+
+1. At least 5 Tigers identified across all urgency levels
+2. At least 2 Paper Tigers with explicit rationale for why they are overblown
+3. At least 1 Elephant identified (teams always have unspoken concerns)
+4. Every Launch-Blocking Tiger has a complete action plan (risk, mitigation, owner, date)
+5. Risks span at least 4 of the 10 failure dimensions (product quality, UX, GTM, technical, competitive, alignment, regulatory, CS, instrumentation, pricing)
+6. The analysis includes risks the PM did NOT initially mention (the analyst's independent assessment)
+
+If any criterion is not met, do not save — inform the PM what is missing and continue the analysis.
+
+---
+
+## Workflow — Next Steps
+
+After completing the pre-mortem, offer these natural next steps:
+
+1. **Prepare for stakeholder alignment** — "Would you like help preparing a stakeholder briefing to share these findings and get buy-in on mitigations?" → Invoke the `stakeholder-alignment` skill.
+2. **Log key decisions** — "Would you like to capture the risk mitigation decisions in a decision log for future reference?" → Invoke the `decision-log` skill.
+3. **Verify the output** — "Would you like me to run a quality verification on the pre-mortem before you share it?" → Invoke the `verification` skill.
+
+**Full Strategy Pipeline**: competitive-landscape → vrio-analysis → strategic-moat → strategy → **pre-mortem**

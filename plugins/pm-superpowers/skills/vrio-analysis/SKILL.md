@@ -161,7 +161,11 @@ Based on the analysis, provide concrete recommendations:
 
 5. **Address** — For competitive disadvantages, recommend whether to fix, outsource, or exit.
 
-### Step 6: Stakeholder Engagement
+### Step 6: Save the Output
+
+Save the complete VRIO analysis to `docs/vrio-analyses/YYYY-MM-DD-vrio-<product-name>.md`.
+
+### Step 7: Stakeholder Engagement
 
 <AskUserQuestion>
 **Important: VRIO analysis benefits significantly from multiple perspectives.**
@@ -178,7 +182,7 @@ Suggested stakeholders to involve:
 Would you like me to help you prepare a briefing document or workshop agenda to facilitate this cross-functional VRIO review?
 </AskUserQuestion>
 
-### Step 7: Alternative Frameworks
+### Step 8: Alternative Frameworks
 
 Conclude by noting complementary or alternative frameworks the PM might consider:
 
@@ -188,3 +192,53 @@ Conclude by noting complementary or alternative frameworks the PM might consider
 - **Core Competence Analysis (Prahalad & Hamel)** — Focuses on identifying competencies that provide access to multiple markets, contribute to customer value, and are difficult to imitate.
 
 These frameworks work well in combination — VRIO for internal resource assessment, Porter's Five Forces for external industry dynamics, and SWOT as an integrating framework.
+
+---
+
+## Stopping Conditions
+
+STOP and inform the PM if any of these conditions are met — do not proceed with assumptions:
+
+- **No resources identified.** STOP if the PM cannot list at least 3 resources or capabilities to evaluate. If they cannot identify what they bring to the table, they need to do internal discovery first.
+- **No competitors named.** STOP if the PM cannot identify at least 2 competitors. VRIO assessments of "Rare" and "Inimitable" are meaningless without a competitive reference point.
+- **No product description.** STOP if the PM cannot clearly articulate what the product does and for whom. VRIO without context is an academic exercise.
+
+---
+
+## Red Flags and Anti-Patterns
+
+NEVER tolerate these — push back directly:
+
+- **"Yes" without evidence.** NEVER accept "Yes" for Valuable, Rare, or Inimitable without the PM providing specific evidence. "We're better at it" is not a barrier to imitation. "Our competitors could not replicate our 10-year dataset of [specific data] without [specific barrier]" is.
+- **Wishful rarity.** If the PM claims a resource is rare, ask: "Which specific competitors lack this, and why?" If they cannot name competitors who lack it, it is probably not rare.
+- **Confusing operational necessity with advantage.** Having a "great engineering team" is not a competitive advantage unless you can explain what makes it rare and inimitable. Most companies believe their team is great.
+- **Ignoring the "Organized" dimension.** PMs frequently claim V+R+I but skip the honest assessment of whether the organization actually exploits the resource. Having a moat you do not use is not a moat.
+- **Over-counting resources.** If the PM lists 10+ resources, they are padding the list. Challenge them to prioritize the 5-8 that genuinely matter. Quantity dilutes the analysis.
+- **VRIO in isolation.** NEVER present VRIO results without connecting them to competitive context. Every "Sustained Advantage" should be tested against what competitors are actually doing.
+
+---
+
+## Completion Requirements
+
+Before presenting the final VRIO analysis, verify ALL of the following:
+
+1. At least 5 resources evaluated through the complete VRIO decision tree
+2. VRIO matrix table is complete with no blank cells
+3. Every "Yes" assessment has specific supporting evidence documented
+4. Narrative analysis covers all five categories (sustained, temporary, unused, parity, disadvantage)
+5. Strategic recommendations include at least one action for each category that has resources in it
+6. Stakeholder engagement section identifies specific teams and what perspective they would add
+
+If any criterion is not met, do not finalize — inform the PM what is missing and continue the analysis.
+
+---
+
+## Workflow — Next Steps
+
+After completing the VRIO analysis, offer these natural next steps:
+
+1. **Assess strategic moats** — "Would you like to deepen this analysis by assessing your product across 8 moat types? I can carry the VRIO findings forward." → Invoke the `strategic-moat` skill.
+2. **Build the full strategy** — "Would you like to use these competitive advantages as the foundation for a comprehensive product strategy?" → Invoke the `strategy` skill.
+3. **Verify the output** — "Would you like me to run a quality verification on this analysis before you share it?" → Invoke the `verification` skill.
+
+**Full Strategy Pipeline**: competitive-landscape → **vrio-analysis** → strategic-moat → strategy → pre-mortem

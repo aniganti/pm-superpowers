@@ -99,3 +99,32 @@ If the PM requests changes, update the prompt and present it again. Iterate unti
 - The final prompt is rendered as a Markdown code block for easy copying
 - Include a brief note above the code block summarizing what the prompt is designed to accomplish
 - If the PM is satisfied, offer to save the prompt to a file at `docs/prompts/YYYY-MM-DD-<slug>.md`
+
+---
+
+## Stopping Conditions
+
+STOP and inform the PM if:
+
+- **No task identified.** STOP if, after question 6, the PM still cannot articulate a specific task or job-to-be-done. A prompt without a clear task will produce vague output.
+
+---
+
+## Red Flags and Anti-Patterns
+
+NEVER tolerate these — push back directly:
+
+- **Vague roles.** If the PM says "just be an AI assistant," push for specificity. The more precise the role, the better the output.
+- **No audience.** If the PM says "it's just for me," probe further. Even personal use has context — are they drafting for a presentation, exploring ideas, or making a decision?
+- **Kitchen-sink prompts.** If the PM tries to cram multiple unrelated tasks into one prompt, recommend splitting into separate prompts. One prompt, one job.
+- **Skipping the "why."** If the PM only provides the task (question 6) but skips context and constraints, warn them that the output quality will suffer without guardrails.
+
+---
+
+## Completion Requirements
+
+Before presenting the final prompt, verify:
+
+1. Questions 1-7 are answered (or explicitly skipped with rationale)
+2. The generated prompt fills in all template fields — no bracketed placeholders remain
+3. The prompt is specific enough that a different AI tool would produce a useful response from it

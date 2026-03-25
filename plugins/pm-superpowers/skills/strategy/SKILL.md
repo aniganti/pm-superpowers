@@ -255,3 +255,57 @@ Throughout all six steps:
 3. **Be opinionated.** If you see a gap or a weak argument, say so. A good strategy advisor challenges thinking — respectfully but directly.
 4. **Track progress.** At the start of each new step, briefly summarize what has been established so far and what comes next.
 5. **Adapt to context.** If the PM already has strong answers for certain areas, do not belabor those steps. Spend time where the thinking is weakest.
+
+---
+
+## Stopping Conditions
+
+STOP and inform the PM if any of these conditions are met — do not proceed with assumptions:
+
+- **No target user segment.** STOP if the PM cannot articulate even one specific target user segment. A strategy for "everyone" is a strategy for no one.
+- **No problem statement.** STOP if Step 2 produces no clear problem statement. A strategy without a defined problem is a solution in search of a purpose.
+- **No competitive context.** STOP if the PM has zero awareness of competitors or alternatives (including "do nothing"). Either the market does not exist or discovery must happen first.
+- **No measurable goals.** STOP at Step 5 if the PM cannot define any measurable success criteria. A strategy without metrics is a wish.
+
+---
+
+## Red Flags and Anti-Patterns
+
+NEVER tolerate these — push back directly:
+
+- **"Everyone needs this."** This is not a user segment. NEVER accept a problem statement that lacks a specific user segment. Demand specificity: who exactly, in what context, with what pain?
+- **Vague problem statements.** "We need to be better at X" is not a problem statement. Insist on the WHO/WHAT/WHY format. If the PM cannot fill in all three parts, the problem is not yet understood.
+- **Strategy by feature list.** If the PM jumps to features before articulating the problem and strategic pillars, stop them. Features are outputs of strategy, not inputs.
+- **Copying competitors.** "Competitor X has it, so we need it" is not a strategic rationale. Demand evidence that this serves your users and advances your pillars.
+- **Too many pillars.** If the PM identifies more than 4 strategic pillars, challenge them. A strategy that tries to win everywhere wins nowhere. Force prioritization.
+- **Unmeasurable north-star.** "Delight our customers" is not a north-star metric. It must be quantifiable, trackable, and connected to business outcomes.
+- **Skipping stakeholder alignment.** A strategy developed in isolation will fail on contact with the organization. Flag if the PM has not consulted cross-functional partners.
+
+---
+
+## Completion Requirements
+
+Before saving the strategy document, verify ALL of the following:
+
+1. All 10 sections of the strategy document (Step 6) are populated with substantive content — no placeholders or "TBD"
+2. Every strategic recommendation traces back to evidence gathered in Steps 1-3
+3. Problem statement follows the WHO/WHAT/WHY format with a specific user segment
+4. At least 2 strategic pillars are identified with VRIO justification
+5. North-star metric is measurable and has a defined baseline or target
+6. At least 3 KPIs are defined with clear connection to strategic pillars
+7. FAQ section contains at least 5 anticipated stakeholder questions with prepared responses
+8. No internal contradictions between problem statement, pillars, vision, and metrics
+
+If any criterion is not met, do not save. Inform the PM what is missing and continue the work.
+
+---
+
+## Workflow — Next Steps
+
+After completing the strategy, offer these natural next steps:
+
+1. **Run a pre-mortem** — "Would you like to stress-test this strategy with a pre-mortem risk analysis? I can use the findings from this strategy as input." → Invoke the `pre-mortem` skill.
+2. **Prepare for stakeholder alignment** — "Would you like help preparing tailored briefing documents for different stakeholder audiences?" → Invoke the `stakeholder-alignment` skill.
+3. **Verify the output** — "Would you like me to run a quality verification on the strategy document before you share it?" → Invoke the `verification` skill.
+
+**Full Strategy Pipeline**: competitive-landscape → vrio-analysis → strategic-moat → **strategy** → pre-mortem

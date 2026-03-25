@@ -6,19 +6,19 @@
   },
   "metadata": {
     "description": "Claude Code plugin marketplace with skills and tools for product managers",
-    "version": "1.0.0"
+    "version": "2.0.0"
   },
   "plugins": [
     {
       "name": "pm-superpowers",
-      "description": "Product strategy skills: 6-step strategy framework, competitive analysis, VRIO, strategic moats, ecosystem strategy, and pre-mortem risk analysis",
-      "version": "1.0.0",
+      "description": "Product strategy skills: 6-step strategy framework, competitive analysis, VRIO, strategic moats, ecosystem strategy, pre-mortem risk analysis, verification, stakeholder alignment, decision log, and prioritization",
+      "version": "2.0.0",
       "author": {
         "name": "Ani Ganti",
         "url": "https://github.com/aniganti"
       },
       "homepage": "https://github.com/aniganti/pm-superpowers",
-      "tags": ["product-management", "strategy", "competitive-analysis", "vrio", "pre-mortem"],
+      "tags": ["product-management", "strategy", "competitive-analysis", "vrio", "pre-mortem", "stakeholder-alignment", "prioritization", "verification", "decision-log"],
       "source": "./plugins/pm-superpowers"
     }
   ]

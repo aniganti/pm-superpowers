@@ -205,15 +205,60 @@ Compile the complete analysis into a well-structured markdown document and save 
 
 Title the document: `Competitive Landscape Analysis — [Product/Company Name] — [Date]`
 
-Save the document to the working directory as `competitive-landscape-[product-name].md`.
+Save the document to `docs/competitive-analyses/YYYY-MM-DD-competitive-landscape-[product-name].md`.
 
 <AskUserQuestion>
 Your competitive landscape analysis is complete. Here are some suggested next steps:
 
-1. **Share with your team** — This analysis is most valuable when discussed cross-functionally. Consider reviewing it with sales, marketing, and leadership.
-2. **Set up ongoing monitoring** — Competitive landscapes shift. Consider scheduling a quarterly refresh.
-3. **Deep-dive on whitespace** — If any of the whitespace opportunities are compelling, we can run a deeper analysis on market sizing and customer validation.
-4. **Run a VRIO analysis** — To complement this external view with an internal resource assessment, use the `vrio-analysis` skill.
+1. **Run a VRIO analysis** — "Would you like to assess your internal resources against this competitive landscape? I can carry the competitive intelligence forward." → Invoke the `vrio-analysis` skill.
+2. **Deep-dive on whitespace** — If any of the whitespace opportunities are compelling, we can run a deeper analysis on market sizing and customer validation.
+3. **Share with your team** — This analysis is most valuable when discussed cross-functionally. Consider reviewing it with sales, marketing, and leadership.
+4. **Set up ongoing monitoring** — Competitive landscapes shift. Consider scheduling a quarterly refresh.
 
-Would you like to deep-dive on any specific competitor, explore a whitespace opportunity further, or refine the positioning map?
+Would you like to proceed to VRIO analysis, deep-dive on a specific competitor, or refine the positioning map?
 </AskUserQuestion>
+
+---
+
+## Stopping Conditions
+
+STOP and inform the PM if any of these conditions are met — do not proceed with assumptions:
+
+- **No product or market identified.** STOP if the PM cannot describe what their product does or what market it operates in. Without this, competitive analysis is meaningless.
+- **No competitors named.** STOP if the PM cannot name a single direct competitor. Either the market does not exist, or the PM needs to do basic market discovery first — recommend user research before competitive analysis.
+- **No target customer.** STOP if the PM cannot describe their ideal customer. Competitive positioning is relative to a customer's decision criteria — without knowing the customer, positioning is arbitrary.
+
+---
+
+## Red Flags and Anti-Patterns
+
+NEVER tolerate these — push back directly:
+
+- **Single-source intelligence.** NEVER present competitive intelligence from a single source as established fact. One data point is not intelligence — it is an anecdote. Require corroboration.
+- **Competitor worship.** If the PM treats a competitor's moves as automatically correct ("They raised $100M, they must know something"), challenge this. Funding is not validation. Strategy is not mimicry.
+- **Stale data.** Flag any competitive intelligence older than 12 months. Markets shift — stale intelligence is dangerous. Explicitly note the recency of each finding.
+- **Missing "do nothing" competitor.** The biggest competitor is often inaction — the customer's current process (spreadsheets, manual workflows, status quo). ALWAYS include this in the landscape.
+- **Confirmation bias.** If the PM's assessment of competitor weaknesses sounds suspiciously favorable, challenge it. Are those real weaknesses or wishful thinking?
+- **Ignoring indirect competitors.** NEVER let the analysis focus only on direct competitors. Adjacent products, emerging startups, and platform plays are often the real threats.
+
+---
+
+## Completion Requirements
+
+Before saving the analysis, verify ALL of the following:
+
+1. At least 3 competitors profiled with all table columns populated (not "unknown" or "TBD")
+2. Positioning map includes at least 4 players (your product + 3 competitors)
+3. At least 3 whitespace opportunities identified with market size estimates
+4. At least 5 strategic recommendations provided with rationale and next steps
+5. Value chain mapping includes all four stages (suppliers, producers, distribution, consumers)
+6. Executive summary captures the 3-5 most important findings
+7. Appendix lists all research sources with dates
+
+If any criterion is not met, do not save — inform the PM what is missing and continue the analysis.
+
+---
+
+## Workflow — Next Steps
+
+**Full Strategy Pipeline**: **competitive-landscape** → vrio-analysis → strategic-moat → strategy → pre-mortem
