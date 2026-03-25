@@ -125,6 +125,6 @@ NEVER tolerate these — push back directly:
 
 Before presenting the final prompt, verify:
 
-1. At least questions 1-7 are answered (or explicitly skipped with rationale)
+1. Questions 1-7 are answered (or explicitly skipped with rationale)
 2. The generated prompt fills in all template fields — no bracketed placeholders remain
 3. The prompt is specific enough that a different AI tool would produce a useful response from it
