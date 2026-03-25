@@ -161,7 +161,11 @@ Based on the analysis, provide concrete recommendations:
 
 5. **Address** — For competitive disadvantages, recommend whether to fix, outsource, or exit.
 
-### Step 6: Stakeholder Engagement
+### Step 6: Save the Output
+
+Save the complete VRIO analysis to `docs/vrio-analyses/YYYY-MM-DD-vrio-<product-name>.md`.
+
+### Step 7: Stakeholder Engagement
 
 <AskUserQuestion>
 **Important: VRIO analysis benefits significantly from multiple perspectives.**
@@ -178,7 +182,7 @@ Suggested stakeholders to involve:
 Would you like me to help you prepare a briefing document or workshop agenda to facilitate this cross-functional VRIO review?
 </AskUserQuestion>
 
-### Step 7: Alternative Frameworks
+### Step 8: Alternative Frameworks
 
 Conclude by noting complementary or alternative frameworks the PM might consider:
 

@@ -178,7 +178,11 @@ After assessing all eight moat types:
 
 ---
 
-### Step 4 — Ethical Check
+### Step 4 — Save the Output
+
+Save the complete moat assessment to `docs/strategic-moat/YYYY-MM-DD-moat-<product-name>.md`.
+
+### Step 5 — Ethical Check
 
 Present this section explicitly in every assessment:
 

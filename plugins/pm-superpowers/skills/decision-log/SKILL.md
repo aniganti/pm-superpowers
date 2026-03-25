@@ -94,6 +94,16 @@ If a `docs/decisions/` directory already contains prior decisions, briefly revie
 
 ---
 
+## Stopping Conditions
+
+STOP and inform the PM if any of these conditions are met — do not proceed with assumptions:
+
+- **No decision to log.** STOP if the PM cannot state what was decided. If the decision has not actually been made, recommend they make it first — potentially using the `strategy` or `prioritization` skill.
+- **No alternatives considered.** STOP if the PM cannot name a single alternative. A decision with no alternatives is not a decision — it is a default. Help them identify what else could have been done before logging.
+- **No decision-maker identified.** STOP if no one owns the decision. Unowned decisions are assumptions, not commitments.
+
+---
+
 ## Red Flags and Anti-Patterns
 
 - **Decisions without alternatives.** NEVER log a decision that lists zero alternatives. If no alternatives were considered, the PM did not make a decision — they followed a default. Push them to articulate what else could have been done.
@@ -112,3 +122,13 @@ Before saving the decision entry, verify:
 3. Rationale includes specific evidence or constraints (not just preference)
 4. Decision-maker is named
 5. Review date is specified (even if "No expiration" with justification)
+
+---
+
+## Workflow — Next Steps
+
+After logging the decision, offer these natural next steps:
+
+1. **Verify the source artifact** — "Would you like me to run a quality check on the artifact that informed this decision?" → Invoke the `verification` skill.
+2. **Build stakeholder alignment** — "Would you like to prepare tailored briefings to communicate this decision to different stakeholder groups?" → Invoke the `stakeholder-alignment` skill.
+3. **Prioritize next actions** — "Does this decision unlock a set of initiatives that need prioritization?" → Invoke the `prioritization` skill.

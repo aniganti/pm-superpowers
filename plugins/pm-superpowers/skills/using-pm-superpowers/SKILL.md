@@ -81,10 +81,14 @@ All artifacts are saved to the `docs/` directory:
 |---|---|
 | strategy | `docs/strategies/YYYY-MM-DD-<slug>.md` |
 | competitive-landscape | `docs/competitive-analyses/YYYY-MM-DD-competitive-landscape-<name>.md` |
+| vrio-analysis | `docs/vrio-analyses/YYYY-MM-DD-vrio-<product-name>.md` |
+| strategic-moat | `docs/strategic-moat/YYYY-MM-DD-moat-<product-name>.md` |
+| product-ecosystem | `docs/ecosystem-strategies/YYYY-MM-DD-ecosystem-strategy-<name>.md` |
 | pre-mortem | `docs/pre-mortems/YYYY-MM-DD-pre-mortem-<name>.md` |
 | prompt-builder | `docs/prompts/YYYY-MM-DD-<slug>.md` |
+| stakeholder-alignment | `docs/stakeholder-alignment/YYYY-MM-DD-alignment-<topic>.md` |
 | decision-log | `docs/decisions/YYYY-MM-DD-<slug>.md` |
-| ecosystem | `docs/ecosystem-strategies/YYYY-MM-DD-ecosystem-strategy-<name>.md` |
+| prioritization | `docs/prioritization/YYYY-MM-DD-prioritization-<topic>.md` |
 
 ## Getting Started
 
