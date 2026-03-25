@@ -77,6 +77,23 @@ Apply the appropriate checklist based on artifact type.
 9. No blank cells in the VRIO matrix
 10. Recommendations exist for each populated category
 
+#### Strategic Moat-Specific Checks
+
+7. All 8 moat types assessed with explicit ratings (None/Emerging/Moderate/Strong)
+8. Every rating above "None" has specific evidence (not generic claims)
+9. Every moat has at least one deepening opportunity identified
+10. Top 3 recommendations are concrete and actionable
+11. Overall defensibility verdict is candid and evidence-based
+12. Ethical check section is present with genuine reflection
+
+#### Product Ecosystem-Specific Checks
+
+7. Value chain is mapped with clear layers (supply, platform, distribution, demand)
+8. Integration opportunities (backward and forward) are identified with rationale
+9. Portfolio coherence is assessed — products reinforce each other, not just coexist
+10. Closed-loop opportunities are identified where applicable
+11. Short-term and long-term alignment recommendations are distinct and sequenced
+
 #### Pre-Mortem-Specific Checks
 
 7. At least 5 Tigers across urgency levels

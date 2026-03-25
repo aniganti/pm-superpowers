@@ -9,7 +9,8 @@
       "Read(//c/Program Files/**)",
       "Read(//c/Program Files \\(x86\\)/**)",
       "Read(//c/Users/gmani/AppData/Local/**)",
-      "Read(//c/Users/gmani/scoop/**)"
+      "Read(//c/Users/gmani/scoop/**)",
+      "Bash(gh api:*)"
     ]
   }
 }
