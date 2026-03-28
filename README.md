@@ -1,6 +1,6 @@
 # PM Superpowers
 
-**Turn proven product strategy frameworks into structured AI workflows you can run inside Claude Code.**
+**Framework grounded tool for PMs who think, not just ship**
 
 ---
 
