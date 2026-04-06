@@ -2,6 +2,8 @@
 
 **Framework grounded tool for PMs who think, not just ship**
 
+<img width="2808" height="1280" alt="pm-superpowers-grid" src="https://github.com/user-attachments/assets/1168879e-0b0d-485a-841a-dce2fdefa47d" />
+
 ---
 
 ## The problem
