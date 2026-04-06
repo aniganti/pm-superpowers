@@ -102,6 +102,7 @@ All artifacts are saved to the `docs/` directory:
 | prioritization | `docs/prioritization/YYYY-MM-DD-prioritization-<topic>.md` |
 
 ## Installation
+<img width="1598" height="1392" alt="image" src="https://github.com/user-attachments/assets/89d96acc-d90b-4820-819c-8faf6bc343c5" />
 
 ```bash
 # Add the marketplace
