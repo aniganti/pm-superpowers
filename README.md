@@ -1,6 +1,8 @@
 # PM Superpowers
 
-**Framework grounded tool for PMs who think, not just ship**
+[![GitHub stars](https://img.shields.io/github/stars/aniganti/pm-superpowers?style=social)](https://github.com/aniganti/pm-superpowers/stargazers)
+
+**Turn proven product strategy frameworks into structured AI workflows you can run inside Claude Code.**
 
 <img width="2808" height="1280" alt="pm-superpowers-grid" src="https://github.com/user-attachments/assets/1168879e-0b0d-485a-841a-dce2fdefa47d" />
 
@@ -16,7 +18,6 @@ Meanwhile, AI coding tools like Claude Code are reshaping how technical PMs work
 
 ## Installation
 ![claude_LuCGhoy9iF](https://github.com/user-attachments/assets/3bc942e5-7677-4412-90b4-b6a20550d5ac)
-
 
 ```bash
 # Add the marketplace
