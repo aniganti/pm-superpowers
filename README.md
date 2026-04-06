@@ -12,6 +12,21 @@ Meanwhile, AI coding tools like Claude Code are reshaping how technical PMs work
 
 **PM Superpowers bridges that gap.** It gives you structured, multi-step AI workflows grounded in real strategy frameworks — not generic prompts, but interactive skill sessions that ask the right questions, pull competitive intelligence, and produce analysis you'd actually put in front of your leadership team.
 
+## Installation
+![claude_LuCGhoy9iF](https://github.com/user-attachments/assets/3bc942e5-7677-4412-90b4-b6a20550d5ac)
+
+
+```bash
+# Add the marketplace
+claude plugin marketplace add aniganti/pm-superpowers
+
+# Install the plugin
+claude plugin install pm-superpowers
+```
+
+Then run `/strategy` to kick off a full strategy session, or ask "help me prioritize my backlog" to get started.
+
+
 ## What's inside
 
 ### Strategic advisor skills
@@ -101,18 +116,6 @@ All artifacts are saved to the `docs/` directory:
 | decision-log | `docs/decisions/YYYY-MM-DD-<slug>.md` |
 | prioritization | `docs/prioritization/YYYY-MM-DD-prioritization-<topic>.md` |
 
-## Installation
-<img width="1598" height="1392" alt="image" src="https://github.com/user-attachments/assets/89d96acc-d90b-4820-819c-8faf6bc343c5" />
-
-```bash
-# Add the marketplace
-claude plugin marketplace add aniganti/pm-superpowers
-
-# Install the plugin
-claude plugin install pm-superpowers
-```
-
-Then run `/strategy` to kick off a full strategy session, or ask "help me prioritize my backlog" to get started.
 
 ## Architecture
 
