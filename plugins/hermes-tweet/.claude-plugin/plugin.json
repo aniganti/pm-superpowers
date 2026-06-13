@@ -1,0 +1,22 @@
+{
+  "name": "hermes-tweet",
+  "version": "0.1.12",
+  "description": "Documentation-only PM workflows for X/Twitter research through a separate Hermes Tweet runtime.",
+  "author": {
+    "name": "Xquik",
+    "url": "https://github.com/Xquik-dev/hermes-tweet"
+  },
+  "license": "MIT",
+  "keywords": [
+    "product-management",
+    "social-listening",
+    "competitive-analysis",
+    "launch-monitoring",
+    "hermes-agent",
+    "twitter",
+    "x",
+    "automation"
+  ],
+  "homepage": "https://github.com/Xquik-dev/hermes-tweet#readme",
+  "skills": "./skills/"
+}

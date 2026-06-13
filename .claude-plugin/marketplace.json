@@ -20,6 +20,18 @@
       "homepage": "https://github.com/aniganti/pm-superpowers",
       "tags": ["product-management", "strategy", "competitive-analysis", "vrio", "pre-mortem", "stakeholder-alignment", "prioritization", "verification", "decision-log"],
       "source": "./plugins/pm-superpowers"
+    },
+    {
+      "name": "hermes-tweet",
+      "description": "Documentation-only PM workflows for X/Twitter research through a separate Hermes Tweet runtime.",
+      "version": "0.1.12",
+      "author": {
+        "name": "Xquik",
+        "url": "https://github.com/Xquik-dev/hermes-tweet"
+      },
+      "homepage": "https://github.com/Xquik-dev/hermes-tweet#readme",
+      "tags": ["product-management", "social-listening", "competitive-analysis", "launch-monitoring", "hermes-agent", "twitter", "x"],
+      "source": "./plugins/hermes-tweet"
     }
   ]
 }
