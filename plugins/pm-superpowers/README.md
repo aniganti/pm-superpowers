@@ -35,6 +35,10 @@ Aggregation theory analysis for ecosystem strategy. Maps value chains, evaluates
 
 Launch readiness risk analysis. Imagines launch failure and works backward to categorize risks as Tigers (real), Paper Tigers (overblown), or Elephants (unspoken). Creates action plans for launch-blocking risks.
 
+### assess-pmf
+
+Product-market fit assessment using Meta's PMF Playbook: stable retention (X-day retention curves), sustainable growth (growth accounting — New/Retained/Churned/Resurrected/Stale), and deep engagement (ARPU, L28, time in-app). Produces a per-segment, non-binary PMF verdict rather than a single score.
+
 ## Sub-Agents
 
 - **competitive-researcher** — Automated competitive intelligence gathering via web search. Spawned by the strategy and competitive-landscape skills.
