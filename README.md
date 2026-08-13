@@ -1,23 +1,51 @@
-# PM Superpowers
+<h1 align="center">PM Superpowers 🧭</h1>
+
+<p align="center">
+  <strong>Turn proven product strategy frameworks into structured AI workflows you can run inside Claude Code.</strong>
+</p>
+
+<p align="center">
+  <a href="#whats-inside">Skills</a> ·
+  <a href="#getting-started">Getting started</a> ·
+  <a href="references/strategy-frameworks.md">Frameworks</a> ·
+  <a href="CONTRIBUTING.md">Contributing</a> ·
+  <a href="LICENSE">MIT</a>
+</p>
+
+<p align="center">
+  <img width="2808" height="1280" alt="pm-superpowers-grid" src="https://github.com/user-attachments/assets/1168879e-0b0d-485a-841a-dce2fdefa47d">
+</p>
+<p align="center"><sub><em>Eleven skills, one sub-agent, zero prompt engineering.</em></sub></p>
 
 [![GitHub stars](https://img.shields.io/github/stars/aniganti/pm-superpowers?style=social)](https://github.com/aniganti/pm-superpowers/stargazers)
 
-**Turn proven product strategy frameworks into structured AI workflows you can run inside Claude Code.**
+---
 
-<img width="2808" height="1280" alt="pm-superpowers-grid" src="https://github.com/user-attachments/assets/1168879e-0b0d-485a-841a-dce2fdefa47d" />
+## What is this, really?
+
+It's a Claude Code plugin: a set of skills, one sub-agent, and a shared library of framework definitions, packaged so they trigger naturally in conversation instead of living in a doc you have to remember to open.
+
+In practice it feels like having a strategy-minded chief of staff who's read VRIO, aggregation theory, and every pre-mortem post-mortem, and asks the right follow-up question instead of just generating a wall of text. You don't copy-paste a prompt — you run `/strategy` or say "help me prioritize my backlog," and the skill walks you through the framework step by step.
+
+Most AI-for-PM tools stop at "generate a PRD." They help you write faster, not think straighter. PM Superpowers is grounded in named, proven strategy frameworks — the AI doesn't freestyle; it interviews you the way a sharp analyst would, then structures the output around the framework's actual dimensions.
 
 ---
 
-## The problem
+## Stuff you do with it
 
-Product managers are expected to think in frameworks — VRIO for competitive advantage, moat analysis for defensibility, pre-mortems for launch risk. But running these frameworks well is slow and inconsistent. You either spend hours on a strategy doc that covers surface-level analysis, or you skip it entirely because the next sprint is breathing down your neck.
+- **Get a VRIO read on your differentiation** before it becomes a slide in the board deck — Value, Rarity, Imitability, Organization, applied to your actual product.
+- **Stress-test a launch with a pre-mortem** before the launch stress-tests you — Tigers, Paper Tigers, and Elephants, named and owned.
+- **Run competitive research without opening fifteen tabs** — a sub-agent gathers the intelligence, you review the synthesis.
+- **Turn a strategy doc into a briefing your VP will actually read** — audience-specific FAQs and workshop agendas generated from the artifacts you already built.
+- **Log a decision the moment you make it** — reasoning, alternatives, and trade-offs captured while you still remember why, not reconstructed from Slack three months later.
 
-Meanwhile, AI coding tools like Claude Code are reshaping how technical PMs work. But most AI-for-PM tools stop at "generate a PRD." They don't help you *think strategically* — they just help you write faster.
+## Getting started
 
-**PM Superpowers bridges that gap.** It gives you structured, multi-step AI workflows grounded in real strategy frameworks — not generic prompts, but interactive skill sessions that ask the right questions, pull competitive intelligence, and produce analysis you'd actually put in front of your leadership team.
+### I just want to try a skill
 
-## Installation
-![claude_LuCGhoy9iF](https://github.com/user-attachments/assets/3bc942e5-7677-4412-90b4-b6a20550d5ac)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3bc942e5-7677-4412-90b4-b6a20550d5ac" alt="Installing the pm-superpowers plugin in Claude Code" width="100%">
+</p>
 
 ```bash
 # Add the marketplace
@@ -27,8 +55,13 @@ claude plugin marketplace add aniganti/pm-superpowers
 claude plugin install pm-superpowers
 ```
 
-Then run `/strategy` to kick off a full strategy session, or ask "help me prioritize my backlog" to get started.
+Then run `/strategy` to kick off a full strategy session, or just ask "help me prioritize my backlog."
 
+### I want to add a skill or framework
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) — new skills, new frameworks, agents, and bug fixes are all welcome. Direct pushes to `main` aren't accepted; everything goes through review.
+
+---
 
 ## What's inside
 
@@ -70,9 +103,32 @@ Then run `/strategy` to kick off a full strategy session, or ask "help me priori
 |---|---|
 | `competitive-researcher` | Automated competitive intelligence gathering via web research |
 
+---
+
+## Available today · Being sharpened · Under consideration
+
+| ✅ Available today | 🚧 Being sharpened | 💭 Under consideration |
+|---|---|---|
+| 11 skills across strategy, planning, and alignment | Deeper workflow chaining between skills (auto-suggest next step) | Skills for OKR authoring and quarterly planning |
+| 1 sub-agent for competitive research | Richer verification checklists per artifact type | Multi-product / portfolio-level strategy rollups |
+| Marketplace install via `claude plugin` | More worked examples in `references/` | Native integrations with roadmap tools (Jira, Linear) |
+
+<sub>The 💭 column is intent, not a promise — see <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> if you want to help build it.</sub>
+
+---
+
+## Two little stories
+
+**The QBR nobody dreaded.** A PM runs `competitive-landscape`, then `vrio-analysis` on the same product. Twenty minutes later they have a defensibility argument built on named advantages, not adjectives. `strategic-moat` adds the eight-moat check. By the time `strategy` synthesizes it into pillars, the QBR deck writes itself — and survives the first hard question.
+
+**The launch that didn't blow up.** Two weeks before ship, a PM runs `pre-mortem`. The skill surfaces three Tigers (real risks), two Paper Tigers (looked scary, aren't), and one Elephant nobody wanted to name out loud — a dependency on a team that hasn't confirmed capacity. It gets named. `stakeholder-alignment` turns the findings into a one-pager for the exec review. The launch ships on time, because the risk got caught in week two instead of week six.
+
+---
+
 ## Recommended workflows
 
-### Full Strategy Pipeline
+<details>
+<summary><strong>Full Strategy Pipeline</strong></summary>
 
 ```
 competitive-landscape → vrio-analysis → strategic-moat → strategy → pre-mortem
@@ -80,29 +136,39 @@ competitive-landscape → vrio-analysis → strategic-moat → strategy → pre-
 
 Each skill's output feeds into the next. Start with external landscape, move to internal capabilities, synthesize into strategy, then stress-test.
 
-### Launch Readiness
+</details>
+
+<details>
+<summary><strong>Launch Readiness</strong></summary>
 
 ```
 pre-mortem → stakeholder-alignment
 ```
 
-### Decision Capture
+</details>
+
+<details>
+<summary><strong>Decision Capture</strong></summary>
 
 ```
 [any analysis skill] → decision-log → stakeholder-alignment
 ```
 
-### Prioritization
+</details>
+
+<details>
+<summary><strong>Prioritization</strong></summary>
 
 ```
 strategy → prioritization → stakeholder-alignment
 ```
 
-### After Any Analysis
+</details>
 
-Run `verification` before sharing artifacts with stakeholders.
+Run `verification` after any of these before sharing artifacts with stakeholders.
 
-## Where outputs are saved
+<details>
+<summary><strong>Where outputs are saved</strong></summary>
 
 All artifacts are saved to the `docs/` directory:
 
@@ -119,6 +185,9 @@ All artifacts are saved to the `docs/` directory:
 | decision-log | `docs/decisions/YYYY-MM-DD-<slug>.md` |
 | prioritization | `docs/prioritization/YYYY-MM-DD-prioritization-<topic>.md` |
 
+</details>
+
+---
 
 ## Architecture
 
@@ -138,24 +207,20 @@ pm-superpowers/
 
 Each skill follows a consistent structure: **domain context → instructions → interactive process steps → structured output format**. Skills include stopping conditions, red flags/anti-patterns, completion requirements, and workflow chaining to naturally guide PMs to the next relevant analysis.
 
-## Why this approach
+**Plugin marketplace, not a prompt library.** Most PM-for-AI repos are flat collections of markdown templates. This is a proper Claude Code plugin with manifests, a sub-agent, and commands — it installs cleanly, triggers naturally, and composes with other tools.
 
-**Plugin marketplace, not a prompt library.** Most PM-for-AI repos are flat collections of markdown templates. PM Superpowers is structured as a proper Claude Code plugin with manifests, sub-agents, and commands — which means it installs cleanly, triggers naturally in your workflow, and composes with other tools. You don't copy-paste prompts; you run `/strategy` and the workflow guides you.
+---
 
-**Framework-grounded, not vibes.** Every skill is built on a named, proven strategy framework (VRIO, aggregation theory, pre-mortem analysis, RICE/ICE scoring). The AI doesn't freestyle — it walks you through the framework step by step, asking targeted questions and structuring the output around the framework's actual dimensions. This produces analysis that's defensible in a strategy review, not just plausible-sounding.
+## What this is not
 
-**Interactive, not one-shot.** The `strategy` skill is a 6-step *session*, not a single prompt. It gathers context, asks follow-up questions, runs competitive research via sub-agent, and builds the strategy incrementally. This matches how real strategy work happens — iteratively, with judgment at each step.
+- **Not a PRD generator.** Plenty of tools already do that well. This one exists for the thinking that has to happen *before* the PRD.
+- **Not a replacement for your judgment.** The frameworks structure the analysis and ask the questions you'd otherwise forget to ask. You still own the call.
+- **Not gospel.** VRIO, RICE, the Tigers/Paper Tigers/Elephants framework — these are starting points with decades of use behind them, not the only lens worth applying.
+- **Not finished.** New skills and sharper frameworks are still landing — see the table above.
 
-**Workflow-chained, not isolated.** Skills connect to each other. A competitive landscape feeds into VRIO, which feeds into moat analysis, which feeds into strategy, which feeds into pre-mortem. Decisions get logged. Stakeholders get tailored briefings. The whole system composes into end-to-end strategic workflows.
+---
 
-## Built by
-
-[Ani Ganti](https://github.com/aniganti) — Principal Product Manager at [Wrapbook](https://www.wrapbook.com), where I ship AI-powered payroll software for the entertainment industry. I built this because I wanted the strategic frameworks I use daily to work *inside* my AI coding workflow, not next to it.
-
-## Contributing
-
-All contributions welcome — new skills, new frameworks, agents, bug fixes, docs. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
-
-## License
-
-MIT
+<p align="center">
+  <sub>PM Superpowers 🧭</sub><br>
+  <sub>MIT · Built by <a href="https://github.com/aniganti">Ani Ganti</a>, Principal PM at <a href="https://www.wrapbook.com">Wrapbook</a></sub>
+</p>
