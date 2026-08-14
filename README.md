@@ -7,6 +7,7 @@
 <p align="center">
   <a href="#whats-inside">Skills</a> ·
   <a href="#getting-started">Getting started</a> ·
+  <a href="#companion-plugin">Companion plugin</a> ·
   <a href="references/strategy-frameworks.md">Frameworks</a> ·
   <a href="CONTRIBUTING.md">Contributing</a> ·
   <a href="LICENSE">MIT</a>
@@ -57,6 +58,8 @@ claude plugin install pm-superpowers
 
 Then run `/strategy` to kick off a full strategy session, or just ask "help me prioritize my backlog."
 
+Live X/Twitter research is a separate, optional companion — see [Companion plugin](#companion-plugin). You do not need it to use PM Superpowers.
+
 ### I want to add a skill or framework
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) — new skills, new frameworks, agents, and bug fixes are all welcome. Direct pushes to `main` aren't accepted; everything goes through review.
@@ -64,12 +67,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) — new skills, new frameworks, agents, a
 ---
 
 ## What's inside
-
-### Companion product intelligence plugins
-
-| Plugin | What it does |
-|---|---|
-| `hermes-tweet` | Documentation-only product signal workflows. Live research requires a separate Hermes Tweet runtime. |
 
 ### Strategic advisor skills
 
@@ -111,13 +108,37 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) — new skills, new frameworks, agents, a
 
 ---
 
+## Companion plugin
+
+`hermes-tweet` is an **optional, documentation-only** companion. Installing it in Claude Code does **not** add X/Twitter tools and does **not** run live research.
+
+Live work requires a separate [Hermes Agent](https://github.com/NousResearch/hermes-agent) session with the native [Hermes Tweet](https://github.com/Xquik-dev/hermes-tweet) plugin. That runtime uses [Xquik](https://xquik.com), a third-party paid API (account, API key, and sufficient plan or credits). PM Superpowers does not provide or operate it. Xquik is not affiliated with this project or with X Corp.
+
+| Plugin | Skill | What it does |
+|---|---|---|
+| `hermes-tweet` | `social-signal-intelligence` | Guides X/Twitter launch monitoring, competitive listening, and evidence capture in Hermes — then you feed that evidence into the skills above. |
+
+```bash
+# Guidance only — does not add tweet_* tools to Claude Code
+claude plugin install hermes-tweet
+
+# Live research: native Hermes plugin + optional PyPI fallback
+hermes plugins install Xquik-dev/hermes-tweet --enable
+uv pip install --python ~/.hermes/hermes-agent/venv/bin/python hermes-tweet
+```
+
+Keep `XQUIK_API_KEY` in the Hermes runtime, not in chat, prompts, or this repo. See [`plugins/hermes-tweet/README.md`](plugins/hermes-tweet/README.md) for setup and safety defaults.
+
+---
+
 ## Available today · Being sharpened · Under consideration
 
 | ✅ Available today | 🚧 Being sharpened | 💭 Under consideration |
 |---|---|---|
 | 11 skills across strategy, planning, and alignment | Deeper workflow chaining between skills (auto-suggest next step) | Skills for OKR authoring and quarterly planning |
 | 1 sub-agent for competitive research | Richer verification checklists per artifact type | Multi-product / portfolio-level strategy rollups |
-| Marketplace install via `claude plugin` | More worked examples in `references/` | Native integrations with roadmap tools (Jira, Linear) |
+| Optional docs-only companion for Hermes X/Twitter research | More worked examples in `references/` | Native integrations with roadmap tools (Jira, Linear) |
+| Marketplace install via `claude plugin` | | |
 
 <sub>The 💭 column is intent, not a promise — see <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> if you want to help build it.</sub>
 
@@ -171,6 +192,17 @@ strategy → prioritization → stakeholder-alignment
 
 </details>
 
+<details>
+<summary><strong>Social signal → strategy evidence</strong></summary>
+
+```
+[Hermes + hermes-tweet] → competitive-landscape / pre-mortem / decision-log / prioritization
+```
+
+Capture public X/Twitter evidence in Hermes, then bring it into Claude Code as source material. Do not expect live `tweet_*` tools here.
+
+</details>
+
 Run `verification` after any of these before sharing artifacts with stakeholders.
 
 <details>
@@ -202,7 +234,11 @@ pm-superpowers/
 ├── .claude-plugin/
 │   └── marketplace.json        # Root marketplace manifest
 ├── plugins/
-│   ├── hermes-tweet/           # X/Twitter product signal workflows
+│   ├── hermes-tweet/           # Optional docs-only companion (not live X tools)
+│   │   ├── .claude-plugin/
+│   │   │   └── plugin.json
+│   │   └── skills/
+│   │       └── social-signal-intelligence/
 │   └── pm-superpowers/
 │       ├── .claude-plugin/
 │       │   └── plugin.json     # Plugin manifest
@@ -221,6 +257,7 @@ Each skill follows a consistent structure: **domain context → instructions →
 ## What this is not
 
 - **Not a PRD generator.** Plenty of tools already do that well. This one exists for the thinking that has to happen *before* the PRD.
+- **Not a live X/Twitter client.** `hermes-tweet` in this marketplace is workflow documentation. Live reads and actions run in Hermes Agent via Xquik, a third-party paid API.
 - **Not a replacement for your judgment.** The frameworks structure the analysis and ask the questions you'd otherwise forget to ask. You still own the call.
 - **Not gospel.** VRIO, RICE, the Tigers/Paper Tigers/Elephants framework — these are starting points with decades of use behind them, not the only lens worth applying.
 - **Not finished.** New skills and sharper frameworks are still landing — see the table above.
