@@ -65,6 +65,12 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) — new skills, new frameworks, agents, a
 
 ## What's inside
 
+### Companion product intelligence plugins
+
+| Plugin | What it does |
+|---|---|
+| `hermes-tweet` | Documentation-only product signal workflows. Live research requires a separate Hermes Tweet runtime. |
+
 ### Strategic advisor skills
 
 | Skill | What it does |
@@ -196,6 +202,7 @@ pm-superpowers/
 ├── .claude-plugin/
 │   └── marketplace.json        # Root marketplace manifest
 ├── plugins/
+│   ├── hermes-tweet/           # X/Twitter product signal workflows
 │   └── pm-superpowers/
 │       ├── .claude-plugin/
 │       │   └── plugin.json     # Plugin manifest
