@@ -1,7 +1,7 @@
 <h1 align="center">PM Superpowers 🧭</h1>
 
 <p align="center">
-  <strong>Turn proven product strategy frameworks into structured AI workflows you can run inside Claude Code.</strong>
+  <strong>Turn proven product strategy frameworks into structured AI workflows you can run in Claude Code, Cursor, and Grok Bot.</strong>
 </p>
 
 <p align="center">
@@ -24,7 +24,7 @@
 
 ## What is this, really?
 
-It's a Claude Code plugin: a set of skills, one sub-agent, and a shared library of framework definitions, packaged so they trigger naturally in conversation instead of living in a doc you have to remember to open.
+It's a plugin for Claude Code, Cursor, and Grok Bot: a set of skills, one sub-agent, and a shared library of framework definitions, packaged so they trigger naturally in conversation instead of living in a doc you have to remember to open.
 
 In practice it feels like having a strategy-minded chief of staff who's read VRIO, aggregation theory, and every pre-mortem post-mortem, and asks the right follow-up question instead of just generating a wall of text. You don't copy-paste a prompt — you run `/strategy` or say "help me prioritize my backlog," and the skill walks you through the framework step by step.
 
@@ -42,7 +42,7 @@ Most AI-for-PM tools stop at "generate a PRD." They help you write faster, not t
 
 ## Getting started
 
-### I just want to try a skill
+### Claude Code
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3bc942e5-7677-4412-90b4-b6a20550d5ac" alt="Installing the pm-superpowers plugin in Claude Code" width="100%">
@@ -58,7 +58,24 @@ claude plugin install pm-superpowers
 
 Then run `/strategy` to kick off a full strategy session, or just ask "help me prioritize my backlog."
 
-Live X/Twitter research is a separate, optional companion — see [Companion plugin](#companion-plugin). You do not need it to use PM Superpowers.
+### Cursor / Grok Bot
+
+Install **PM Superpowers** from the Cursor marketplace (Plugins) after the listing is published or updated. Search for `pm-superpowers`, install it, then ask "help me prioritize my backlog" or start a strategy session.
+
+The same GitHub repo powers that listing. Cursor discovers skills from `plugins/pm-superpowers/skills/` via `.cursor-plugin` manifests — Claude Code continues to use `.claude-plugin`.
+
+To smoke-test a local checkout before (or instead of) marketplace install:
+
+```bash
+mkdir -p ~/.cursor/plugins/local
+cp -R plugins/pm-superpowers ~/.cursor/plugins/local/pm-superpowers
+```
+
+Reload Cursor (Developer: Reload Window) and confirm the skills appear under Plugins / Customize.
+
+To update the public Cursor listing, submit this repo at [cursor.com/marketplace/publish](https://cursor.com/marketplace/publish). Do not create a second marketplace.
+
+Live X/Twitter research is a separate, optional Claude/Hermes companion — see [Companion plugin](#companion-plugin). You do not need it to use PM Superpowers.
 
 ### I want to add a skill or framework
 
@@ -110,7 +127,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) — new skills, new frameworks, agents, a
 
 ## Companion plugin
 
-`hermes-tweet` is an **optional, documentation-only** companion. Installing it in Claude Code does **not** add X/Twitter tools and does **not** run live research.
+`hermes-tweet` is an **optional, documentation-only** companion for Claude Code and Hermes Agent. It is **not** listed in the Cursor marketplace: the skill only guides live `tweet_*` work in a Hermes runtime, which Cursor / Grok Bot do not provide. Installing it in Claude Code does **not** add X/Twitter tools and does **not** run live research.
 
 Live work requires a separate [Hermes Agent](https://github.com/NousResearch/hermes-agent) session with the native [Hermes Tweet](https://github.com/Xquik-dev/hermes-tweet) plugin. That runtime uses [Xquik](https://xquik.com), a third-party paid API (account, API key, and sufficient plan or credits). PM Superpowers does not provide or operate it. Xquik is not affiliated with this project or with X Corp.
 
@@ -138,7 +155,7 @@ Keep `XQUIK_API_KEY` in the Hermes runtime, not in chat, prompts, or this repo. 
 | 11 skills across strategy, planning, and alignment | Deeper workflow chaining between skills (auto-suggest next step) | Skills for OKR authoring and quarterly planning |
 | 1 sub-agent for competitive research | Richer verification checklists per artifact type | Multi-product / portfolio-level strategy rollups |
 | Optional docs-only companion for Hermes X/Twitter research | More worked examples in `references/` | Native integrations with roadmap tools (Jira, Linear) |
-| Marketplace install via `claude plugin` | | |
+| Marketplace install via `claude plugin` and Cursor Plugins | | |
 
 <sub>The 💭 column is intent, not a promise — see <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> if you want to help build it.</sub>
 
@@ -232,25 +249,28 @@ All artifacts are saved to the `docs/` directory:
 ```
 pm-superpowers/
 ├── .claude-plugin/
-│   └── marketplace.json        # Root marketplace manifest
+│   └── marketplace.json        # Claude Code marketplace
+├── .cursor-plugin/
+│   └── marketplace.json        # Cursor / Grok Bot marketplace
 ├── plugins/
-│   ├── hermes-tweet/           # Optional docs-only companion (not live X tools)
+│   ├── hermes-tweet/           # Optional docs-only companion (Claude/Hermes only)
 │   │   ├── .claude-plugin/
 │   │   │   └── plugin.json
 │   │   └── skills/
 │   │       └── social-signal-intelligence/
 │   └── pm-superpowers/
 │       ├── .claude-plugin/
-│       │   └── plugin.json     # Plugin manifest
+│       │   └── plugin.json     # Claude Code plugin manifest
+│       ├── .cursor-plugin/
+│       │   └── plugin.json     # Cursor / Grok Bot plugin manifest
 │       ├── agents/             # Sub-agent definitions
-│       ├── skills/             # SKILL.md per skill (the core logic)
-│       └── commands/           # Slash command definitions
+│       └── skills/             # SKILL.md per skill (the core logic)
 └── references/                 # Shared framework definitions (VRIO, moats, etc.)
 ```
 
 Each skill follows a consistent structure: **domain context → instructions → interactive process steps → structured output format**. Skills include stopping conditions, red flags/anti-patterns, completion requirements, and workflow chaining to naturally guide PMs to the next relevant analysis.
 
-**Plugin marketplace, not a prompt library.** Most PM-for-AI repos are flat collections of markdown templates. This is a proper Claude Code plugin with manifests, a sub-agent, and commands — it installs cleanly, triggers naturally, and composes with other tools.
+**Plugin marketplace, not a prompt library.** Most PM-for-AI repos are flat collections of markdown templates. This is a proper plugin with dual manifests (Claude Code and Cursor / Grok Bot), a sub-agent, and skills that install cleanly, trigger naturally, and compose with other tools.
 
 ---
 
