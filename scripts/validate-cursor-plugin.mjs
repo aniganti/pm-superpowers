@@ -9,7 +9,7 @@
  * - Does not warn about missing hooks/mcp.json (this plugin has neither).
  * - Treats YAML folded/literal description blocks as present.
  *
- * Usage (from repo root):
+ * Usage (from any working directory):
  *   node scripts/validate-cursor-plugin.mjs
  *
  * Local smoke-test after validation:
@@ -21,8 +21,9 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import process from "node:process";
+import { fileURLToPath } from "node:url";
 
-const repoRoot = process.cwd();
+const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const errors = [];
 const warnings = [];
 
@@ -225,10 +226,20 @@ async function validateFrontmatterFile(filePath, componentName, requiredKeys, pl
   }
 }
 
-async function validateComponentFrontmatter(pluginDir, pluginName) {
-  const skillsDir = path.join(pluginDir, "skills");
+function resolveComponentDirs(pluginDir, pluginManifest, fieldName, defaultRel) {
+  const specified = extractPathValues(pluginManifest?.[fieldName]);
+  const rels = specified.length > 0 ? specified : [defaultRel];
+  return rels
+    .filter((rel) => typeof rel === "string" && !rel.startsWith("http://") && !rel.startsWith("https://"))
+    .map((rel) => path.resolve(pluginDir, rel));
+}
+
+async function validateComponentFrontmatter(pluginDir, pluginName, pluginManifest) {
   let skillCount = 0;
-  if (await pathExists(skillsDir)) {
+  for (const skillsDir of resolveComponentDirs(pluginDir, pluginManifest, "skills", "skills")) {
+    if (!(await pathExists(skillsDir))) {
+      continue;
+    }
     const files = await walkFiles(skillsDir);
     for (const file of files) {
       if (path.basename(file) === "SKILL.md") {
@@ -244,8 +255,10 @@ async function validateComponentFrontmatter(pluginDir, pluginName) {
     console.log(`${pluginName}: discovered ${skillCount} skill(s).`);
   }
 
-  const agentsDir = path.join(pluginDir, "agents");
-  if (await pathExists(agentsDir)) {
+  for (const agentsDir of resolveComponentDirs(pluginDir, pluginManifest, "agents", "agents")) {
+    if (!(await pathExists(agentsDir))) {
+      continue;
+    }
     const files = await walkFiles(agentsDir);
     for (const file of files) {
       const ext = path.extname(file).toLowerCase();
@@ -255,8 +268,10 @@ async function validateComponentFrontmatter(pluginDir, pluginName) {
     }
   }
 
-  const rulesDir = path.join(pluginDir, "rules");
-  if (await pathExists(rulesDir)) {
+  for (const rulesDir of resolveComponentDirs(pluginDir, pluginManifest, "rules", "rules")) {
+    if (!(await pathExists(rulesDir))) {
+      continue;
+    }
     const files = await walkFiles(rulesDir);
     for (const file of files) {
       const ext = path.extname(file).toLowerCase();
@@ -266,8 +281,10 @@ async function validateComponentFrontmatter(pluginDir, pluginName) {
     }
   }
 
-  const commandsDir = path.join(pluginDir, "commands");
-  if (await pathExists(commandsDir)) {
+  for (const commandsDir of resolveComponentDirs(pluginDir, pluginManifest, "commands", "commands")) {
+    if (!(await pathExists(commandsDir))) {
+      continue;
+    }
     const files = await walkFiles(commandsDir);
     for (const file of files) {
       const ext = path.extname(file).toLowerCase();
@@ -419,7 +436,7 @@ async function main() {
       addError(`${entry.name}: do not require an MCP server for this plugin.`);
     }
 
-    await validateComponentFrontmatter(pluginDir, entry.name);
+    await validateComponentFrontmatter(pluginDir, entry.name, pluginManifest);
   }
 
   summarizeAndExit();

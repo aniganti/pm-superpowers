@@ -47,7 +47,7 @@ What the skill produces.
 1. Create directory structure under `plugins/`
 2. Add `.claude-plugin/plugin.json` (required for Claude Code)
 3. Add `.cursor-plugin/plugin.json` if the plugin should also install in Cursor / Grok Bot
-4. Add skills, agents, or commands
+4. Add skills and agents (`commands/` is optional; this repo does not currently ship slash commands)
 5. Register in the matching root marketplace manifest(s)
 
 ## Packaging (Claude Code vs Cursor)
@@ -83,7 +83,7 @@ cat plugins/PLUGIN_NAME/.cursor-plugin/plugin.json | jq .
 node scripts/validate-cursor-plugin.mjs
 ```
 
-To smoke-test Cursor discovery locally, copy the plugin folder (not the whole repo) into `~/.cursor/plugins/local/` and reload Cursor:
+To smoke-test Cursor discovery locally, copy the plugin folder (not the whole repo) into `~/.cursor/plugins/local/` and reload Cursor. Use a real copy, not a symlink to the checkout — Cursor skips symlinks that point outside that folder:
 
 ```bash
 mkdir -p ~/.cursor/plugins/local

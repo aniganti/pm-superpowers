@@ -23,9 +23,10 @@ plugins/
     ├── .cursor-plugin/
     │   └── plugin.json     # Cursor / Grok Bot manifest (required for Cursor)
     ├── agents/             # Sub-agent definitions (.md files)
-    ├── skills/             # Skill definitions (SKILL.md per skill)
-    └── commands/           # Slash command definitions (.md files)
+    └── skills/             # Skill definitions (SKILL.md per skill)
 ```
+
+Optional: `commands/` for slash-command markdown. This repo currently has none.
 
 ## Development Workflow
 
@@ -33,7 +34,7 @@ plugins/
 
 1. Create the plugin directory structure under `plugins/`
 2. Create `plugin.json` in `.claude-plugin/` (and `.cursor-plugin/` if the plugin should install in Cursor)
-3. Add components (agents, skills, commands)
+3. Add components (skills, agents; commands only if needed)
 4. **Update the matching root marketplace.json file(s)**
 5. Use lowercase, hyphen-separated names
 

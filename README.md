@@ -71,7 +71,7 @@ mkdir -p ~/.cursor/plugins/local
 cp -R plugins/pm-superpowers ~/.cursor/plugins/local/pm-superpowers
 ```
 
-Reload Cursor (Developer: Reload Window) and confirm the skills appear under Plugins / Customize.
+Copy the plugin directory rather than symlinking the git checkout; Cursor skips symlinks that point outside `~/.cursor/plugins/local`. Reload Cursor (Developer: Reload Window) and confirm the skills appear under Plugins / Customize. This copy includes `.cursor-plugin/plugin.json`, `skills/`, and `agents/`. Repo-root `references/` is shared documentation, not required for Cursor skill discovery.
 
 To update the public Cursor listing, submit this repo at [cursor.com/marketplace/publish](https://cursor.com/marketplace/publish). Do not create a second marketplace.
 
