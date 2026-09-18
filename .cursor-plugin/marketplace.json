@@ -20,6 +20,7 @@
       "homepage": "https://github.com/aniganti/pm-superpowers",
       "repository": "https://github.com/aniganti/pm-superpowers",
       "license": "MIT",
+      "logo": "assets/logo.svg",
       "keywords": [
         "product-management",
         "strategy",
