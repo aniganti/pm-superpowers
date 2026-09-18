@@ -53,7 +53,7 @@ Framework-driven feature and initiative prioritization using RICE, ICE, or weigh
 
 ### verification
 
-Quality gate for any PM strategy artifact. Re-reads completed documents against structured checklists (universal + artifact-specific) and issues a PASS / PASS WITH WARNINGS / FAIL verdict. Covers strategy, competitive landscape, VRIO, strategic moat, product ecosystem, and pre-mortem artifact types.
+Quality gate for any PM strategy artifact. Re-reads completed documents against structured checklists (universal + artifact-specific) and issues a PASS / PASS WITH WARNINGS / FAIL verdict. Covers find-your-moat thin passes, strategy, competitive landscape, VRIO, strategic moat, product ecosystem, and pre-mortem artifact types.
 
 ### prompt-builder
 
@@ -61,9 +61,17 @@ Guided AI prompt creation for PMs. Walks through 9 structured questions (role, a
 
 ### skill-guide
 
-Interactive guide to all available skills, recommended workflows, invocation examples, and output save locations. Formerly `using-pm-superpowers`.
+Interactive guide to all available skills, recommended workflows, invocation examples, and output save locations.
 
 ## Recommended Workflows
+
+### First value after install
+
+```
+find-your-moat → strategic-moat  (or competitive-landscape / vrio-analysis)
+```
+
+Just installed or want a real moat read on your product now? Start with the thin pass, then deepen or enter the full strategy pipeline.
 
 ### Full Strategy Pipeline
 

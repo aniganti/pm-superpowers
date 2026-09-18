@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "pm-superpowers",
-      "description": "Product strategy skills: 6-step strategy framework, competitive analysis, VRIO, strategic moats, ecosystem strategy, pre-mortem risk analysis, verification, stakeholder alignment, decision log, and prioritization",
+      "description": "Product strategy skills: find-your-moat front door, 6-step strategy framework, competitive analysis, VRIO, strategic moats, ecosystem strategy, pre-mortem risk analysis, verification, stakeholder alignment, decision log, and prioritization",
       "version": "2.0.0",
       "author": {
         "name": "Ani Ganti",
@@ -23,6 +23,7 @@
       "logo": "assets/logo.svg",
       "keywords": [
         "product-management",
+        "find-your-moat",
         "strategy",
         "competitive-analysis",
         "vrio",
@@ -34,6 +35,7 @@
       ],
       "tags": [
         "product-management",
+        "find-your-moat",
         "strategy",
         "competitive-analysis",
         "vrio",

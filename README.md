@@ -60,7 +60,7 @@ Then ask "find my moat" for a thin first-pass read on your product. For a skill 
 
 ### Cursor / Grok Bot
 
-Install **PM Superpowers** from the Cursor marketplace (Plugins) after the listing is published or updated. Search for `pm-superpowers`, install it, then ask "find my moat" for a thin first-pass read on your product.
+Install **PM Superpowers** from the Cursor marketplace (Plugins) after the listing is published or updated. Search for `pm-superpowers`, install it, then ask "find my moat" for a thin first-pass read on your product. For a skill menu, ask "skill guide."
 
 The same GitHub repo powers that listing. Cursor discovers skills from `plugins/pm-superpowers/skills/` via `.cursor-plugin` manifests — Claude Code continues to use `.claude-plugin`.
 
@@ -171,6 +171,17 @@ Keep `XQUIK_API_KEY` in the Hermes runtime, not in chat, prompts, or this repo. 
 ---
 
 ## Recommended workflows
+
+<details>
+<summary><strong>First value after install</strong></summary>
+
+```
+find-your-moat → strategic-moat  (or competitive-landscape / vrio-analysis)
+```
+
+Just installed or want a real moat read on your product now? Start with the thin pass, then deepen or enter the full strategy pipeline.
+
+</details>
 
 <details>
 <summary><strong>Full Strategy Pipeline</strong></summary>

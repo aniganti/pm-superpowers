@@ -81,7 +81,7 @@ Skills are triggered by natural language. Just describe what you need:
 - "Help me build a product strategy for [product]"
 - "Run a competitive analysis on [company]"
 - "Do a VRIO analysis for [product]"
-- "How defensible is [product]?"
+- "How defensible is [product]?" (full 8-type assessment → `strategic-moat`)
 - "Run a pre-mortem on this launch plan"
 - "Help me prioritize these features"
 
