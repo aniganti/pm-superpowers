@@ -1,7 +1,7 @@
 <h1 align="center">PM Superpowers 🧭</h1>
 
 <p align="center">
-  <strong>Turn proven product strategy frameworks into structured AI workflows you can run in Claude Code, Cursor, and Grok Bot.</strong>
+  <strong>A moat / defensibility machine — answer “what’s our moat?” in minutes. A plugin for Claude Code, Cursor, and Grok Bot.</strong>
 </p>
 
 <p align="center">
@@ -20,11 +20,15 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/aniganti/pm-superpowers?style=social)](https://github.com/aniganti/pm-superpowers/stargazers)
 
+<p align="center"><strong>Star the repo if this saves you an afternoon.</strong></p>
+
 ---
 
 ## What is this, really?
 
 It's a plugin for Claude Code, Cursor, and Grok Bot: a set of skills, one sub-agent, and a shared library of framework definitions, packaged so they trigger naturally in conversation instead of living in a doc you have to remember to open.
+
+**Origin.** In 2022 Ani published a [6-step product strategy framework](https://uxdesign.cc/product-strategy-framework-a4d49bf5b265). In 2026 that thinking became [this runnable plugin](https://aniganti.medium.com/i-wrote-about-product-strategy-in-6-steps-in-2022-i-just-built-an-ai-that-runs-it-4c6375527a5c).
 
 In practice it feels like having a strategy-minded chief of staff who's read VRIO, aggregation theory, and every pre-mortem post-mortem, and asks the right follow-up question instead of just generating a wall of text. You don't copy-paste a prompt — you run `/strategy` or say "help me prioritize my backlog," and the skill walks you through the framework step by step.
 
