@@ -16,7 +16,7 @@
 <p align="center">
   <img width="2808" height="1280" alt="pm-superpowers-grid" src="https://github.com/user-attachments/assets/1168879e-0b0d-485a-841a-dce2fdefa47d">
 </p>
-<p align="center"><sub><em>Eleven skills, one sub-agent, zero prompt engineering.</em></sub></p>
+<p align="center"><sub><em>Thirteen skills, one sub-agent, zero prompt engineering.</em></sub></p>
 
 [![GitHub stars](https://img.shields.io/github/stars/aniganti/pm-superpowers?style=social)](https://github.com/aniganti/pm-superpowers/stargazers)
 
@@ -26,7 +26,7 @@
 
 It's a plugin for Claude Code, Cursor, and Grok Bot: a set of skills, one sub-agent, and a shared library of framework definitions, packaged so they trigger naturally in conversation instead of living in a doc you have to remember to open.
 
-In practice it feels like having a strategy-minded chief of staff who's read VRIO, aggregation theory, and every pre-mortem post-mortem, and asks the right follow-up question instead of just generating a wall of text. You don't copy-paste a prompt — you run `/strategy` or say "help me prioritize my backlog," and the skill walks you through the framework step by step.
+In practice it feels like having a strategy-minded chief of staff who's read VRIO, aggregation theory, and every pre-mortem post-mortem, and asks the right follow-up question instead of just generating a wall of text. You don't copy-paste a prompt — you say "find my moat" for a thin first pass on your product, or run `/strategy` when you want the full framework, and the skill walks you through it step by step.
 
 Most AI-for-PM tools stop at "generate a PRD." They help you write faster, not think straighter. PM Superpowers is grounded in named, proven strategy frameworks — the AI doesn't freestyle; it interviews you the way a sharp analyst would, then structures the output around the framework's actual dimensions.
 
@@ -56,11 +56,11 @@ claude plugin marketplace add aniganti/pm-superpowers
 claude plugin install pm-superpowers
 ```
 
-Then run `/strategy` to kick off a full strategy session, or just ask "help me prioritize my backlog."
+Then ask "find my moat" for a thin first-pass read on your product. For a skill menu, ask "skill guide." Run `/strategy` when you want the full framework.
 
 ### Cursor / Grok Bot
 
-Install **PM Superpowers** from the Cursor marketplace (Plugins) after the listing is published or updated. Search for `pm-superpowers`, install it, then ask "help me prioritize my backlog" or start a strategy session.
+Install **PM Superpowers** from the Cursor marketplace (Plugins) after the listing is published or updated. Search for `pm-superpowers`, install it, then ask "find my moat" for a thin first-pass read on your product.
 
 The same GitHub repo powers that listing. Cursor discovers skills from `plugins/pm-superpowers/skills/` via `.cursor-plugin` manifests — Claude Code continues to use `.claude-plugin`.
 
@@ -89,10 +89,11 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) — new skills, new frameworks, agents, a
 
 | Skill | What it does |
 |---|---|
+| `find-your-moat` | Thin first-pass moat read on your product — four core types, a short so-what, and a saved artifact. **Start here for first value.** |
 | `strategy` | Full 6-step interactive workflow: market analysis → problem space → strategic pillars (VRIO) → design/technical alignment → vision/mission/goals → communicate |
 | `competitive-landscape` | Standalone competitor analysis with automated web research via sub-agent |
 | `vrio-analysis` | VRIO framework competitive advantage evaluation — Value, Rarity, Imitability, Organization — applied to your specific product |
-| `strategic-moat` | Defensibility assessment across 8 moat types including network effects, feedback loops, and ecosystem lock-in |
+| `strategic-moat` | Full defensibility assessment across 8 moat types including network effects, feedback loops, and ecosystem lock-in |
 | `product-ecosystem` | Aggregation theory and value chain analysis for platform/ecosystem strategy |
 
 ### Planning & execution skills
@@ -115,7 +116,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) — new skills, new frameworks, agents, a
 | Skill | What it does |
 |---|---|
 | `prompt-builder` | Guided AI prompt creation through 9 structured questions — role, audience, outcome, obstacles, tone, task, context, examples, format |
-| `using-pm-superpowers` | Interactive guide to all available skills, recommended workflows, and output save locations |
+| `skill-guide` | Interactive guide to all available skills, recommended workflows, and output save locations |
 
 ### Sub-agents
 
@@ -152,7 +153,7 @@ Keep `XQUIK_API_KEY` in the Hermes runtime, not in chat, prompts, or this repo. 
 
 | ✅ Available today | 🚧 Being sharpened | 💭 Under consideration |
 |---|---|---|
-| 11 skills across strategy, planning, and alignment | Deeper workflow chaining between skills (auto-suggest next step) | Skills for OKR authoring and quarterly planning |
+| 13 skills across strategy, planning, and alignment | Deeper workflow chaining between skills (auto-suggest next step) | Skills for OKR authoring and quarterly planning |
 | 1 sub-agent for competitive research | Richer verification checklists per artifact type | Multi-product / portfolio-level strategy rollups |
 | Optional docs-only companion for Hermes X/Twitter research | More worked examples in `references/` | Native integrations with roadmap tools (Jira, Linear) |
 | Marketplace install via `claude plugin` and Cursor Plugins | | |
@@ -229,6 +230,7 @@ All artifacts are saved to the `docs/` directory:
 
 | Skill | Save Location |
 |---|---|
+| find-your-moat | `docs/strategic-moat/YYYY-MM-DD-find-moat-<slug>.md` |
 | strategy | `docs/strategies/YYYY-MM-DD-<slug>.md` |
 | competitive-landscape | `docs/competitive-analyses/YYYY-MM-DD-competitive-landscape-<name>.md` |
 | vrio-analysis | `docs/vrio-analyses/YYYY-MM-DD-vrio-<product-name>.md` |

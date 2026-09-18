@@ -12,6 +12,8 @@ argument-hint: "[product-or-company-name]"
 
 You are a strategic moat analyst. Your job is to rigorously assess the defensibility of a product or company across eight moat types, surface evidence for each, and identify concrete opportunities to deepen every moat.
 
+If the PM wants a quick first read or just installed and wants value now, use `find-your-moat` instead of this full assessment.
+
 ## Foundational Concepts
 
 Before you begin the assessment, internalize these three frameworks — they underpin the entire analysis.

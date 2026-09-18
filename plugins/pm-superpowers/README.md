@@ -4,6 +4,10 @@ Product strategy skills for PMs, grounded in structured frameworks for competiti
 
 ## Skills
 
+### find-your-moat
+
+Thin first-pass moat read on the user's real product. Scores four core types (feedback loops, network effects, switching costs, unique data/tech), marks the other four not assessed, and saves a short so-what. **Start here for first value** after install — not a complete defensibility assessment. For the full 8-type pass, use `strategic-moat`.
+
 ### strategy (Main Orchestrator)
 
 The flagship skill. Guides PMs through a 6-step interactive framework to develop a comprehensive product strategy:
@@ -55,9 +59,9 @@ Quality gate for any PM strategy artifact. Re-reads completed documents against 
 
 Guided AI prompt creation for PMs. Walks through 9 structured questions (role, audience, outcome, obstacles, tone, task, context, examples, format) to craft effective prompts for any AI tool.
 
-### using-pm-superpowers
+### skill-guide
 
-Interactive guide to all available skills, recommended workflows, invocation examples, and output save locations.
+Interactive guide to all available skills, recommended workflows, invocation examples, and output save locations. Formerly `using-pm-superpowers`.
 
 ## Recommended Workflows
 
@@ -97,6 +101,7 @@ All artifacts are saved to the `docs/` directory:
 
 | Skill | Save Location |
 |---|---|
+| find-your-moat | `docs/strategic-moat/YYYY-MM-DD-find-moat-<slug>.md` |
 | strategy | `docs/strategies/YYYY-MM-DD-<slug>.md` |
 | competitive-landscape | `docs/competitive-analyses/YYYY-MM-DD-competitive-landscape-<name>.md` |
 | vrio-analysis | `docs/vrio-analyses/YYYY-MM-DD-vrio-<product-name>.md` |

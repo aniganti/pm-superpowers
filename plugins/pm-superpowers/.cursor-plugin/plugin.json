@@ -2,7 +2,7 @@
   "name": "pm-superpowers",
   "displayName": "PM Superpowers",
   "version": "2.0.0",
-  "description": "Product strategy skills for PMs: 6-step strategy framework, competitive landscape analysis, VRIO, strategic moats, product ecosystem strategy, pre-mortem risk analysis, AI prompt builder, verification, stakeholder alignment, decision log, and prioritization",
+  "description": "Product strategy skills for PMs: find-your-moat front door, 6-step strategy framework, competitive landscape analysis, VRIO, strategic moats, product ecosystem strategy, pre-mortem risk analysis, AI prompt builder, verification, stakeholder alignment, decision log, and prioritization",
   "author": {
     "name": "Ani Ganti",
     "url": "https://github.com/aniganti"
@@ -13,6 +13,7 @@
   "logo": "assets/logo.svg",
   "keywords": [
     "product-strategy",
+    "find-your-moat",
     "competitive-analysis",
     "vrio",
     "moats",
