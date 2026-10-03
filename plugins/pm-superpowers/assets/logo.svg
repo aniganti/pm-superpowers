@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">PM Superpowers</title>
+  <desc id="desc">Square marketplace logotype: compass rose on a rounded indigo plate</desc>
+  <!-- Background plate (1:1 with solid fill — required by Cursor publish form) -->
+  <rect width="512" height="512" rx="96" ry="96" fill="#1B2A4A"/>
+  <!-- Soft inner plate -->
+  <rect x="36" y="36" width="440" height="440" rx="80" ry="80" fill="#243B67"/>
+  <!-- Outer compass ring -->
+  <circle cx="256" cy="256" r="148" fill="none" stroke="#7DD3FC" stroke-width="14" opacity="0.95"/>
+  <circle cx="256" cy="256" r="118" fill="none" stroke="#38BDF8" stroke-width="6" opacity="0.55"/>
+  <!-- Cardinal ticks -->
+  <g stroke="#E0F2FE" stroke-width="10" stroke-linecap="round">
+    <line x1="256" y1="92" x2="256" y2="122"/>
+    <line x1="256" y1="390" x2="256" y2="420"/>
+    <line x1="92" y1="256" x2="122" y2="256"/>
+    <line x1="390" y1="256" x2="420" y2="256"/>
+  </g>
+  <!-- Compass needle (N accent) -->
+  <polygon points="256,118 286,256 256,238 226,256" fill="#F97316"/>
+  <polygon points="256,394 226,256 256,274 286,256" fill="#94A3B8"/>
+  <!-- Center hub -->
+  <circle cx="256" cy="256" r="28" fill="#0F172A"/>
+  <circle cx="256" cy="256" r="16" fill="#F8FAFC"/>
+  <!-- Small N mark -->
+  <text x="256" y="84" text-anchor="middle" font-family="Inter, Helvetica, Arial, sans-serif" font-size="36" font-weight="700" fill="#7DD3FC">N</text>
+</svg>

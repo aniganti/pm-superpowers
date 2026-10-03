@@ -14,7 +14,7 @@ NO COMPLETION CLAIMS WITHOUT FRESH VERIFICATION EVIDENCE. This skill exists to p
 
 ## When to Use
 
-Invoke this skill after any document-producing skill (strategy, competitive-landscape, vrio-analysis, strategic-moat, product-ecosystem, pre-mortem, prioritization, decision-log, stakeholder-alignment, prompt-builder) and before sharing the artifact with stakeholders.
+Invoke this skill after any document-producing skill (find-your-moat, strategy, competitive-landscape, vrio-analysis, strategic-moat, product-ecosystem, pre-mortem, prioritization, decision-log, stakeholder-alignment, prompt-builder) and before sharing the artifact with stakeholders.
 
 ## Process
 
@@ -34,12 +34,15 @@ Determine which skill produced the artifact based on its structure and content:
 
 | Artifact Type | Key Indicators |
 |---|---|
+| Find your moat (thin pass) | Title "Find Your Moat", `Depth: Thin first pass`, four scored moat types, four marked "Not assessed", filename `…-find-moat-<slug>.md` |
 | Strategy document | Executive summary, strategic pillars, vision/mission, KPIs |
 | Competitive landscape | Competitor profiles table, positioning map, whitespace |
 | VRIO analysis | VRIO matrix table, V/R/I/O assessments |
-| Strategic moat | 8 moat types with ratings, ethical check |
+| Strategic moat (full) | All 8 moat types rated, ethical check, filename `…-moat-<product-name>.md` (not `…-find-moat-…`) |
 | Product ecosystem | Value chain diagram, integration opportunities, closed loops |
 | Pre-mortem | Tigers/Paper Tigers/Elephants, action plans |
+
+If an artifact could match both moat types, prefer **Find your moat (thin pass)** when `Depth: Thin first pass` or `…-find-moat-…` is present. Do not apply the full Strategic Moat checklist to a thin pass.
 
 ### Step 3: Run the Verification Checklist
 
@@ -77,7 +80,17 @@ Apply the appropriate checklist based on artifact type.
 9. No blank cells in the VRIO matrix
 10. Recommendations exist for each populated category
 
-#### Strategic Moat-Specific Checks
+#### Find Your Moat (Thin Pass) Checks
+
+7. A real named product is documented (not a sample or fictional company)
+8. Only four moat types are scored (feedback loops, network effects, switching costs, unique data/tech); the other four are explicitly "Not assessed"
+9. Every rating above "None" has one specific evidence line
+10. Every scored type has one deepen idea
+11. So-what section has 3–5 bullets (strongest, weakest, competitor-copy risk, do-this-week)
+12. Document states it is **not** a complete defensibility assessment
+13. Do **not** fail for missing ethical check, all 8 types, or top-3 recommendations — those belong to full `strategic-moat`
+
+#### Strategic Moat (Full)-Specific Checks
 
 7. All 8 moat types assessed with explicit ratings (None/Emerging/Moderate/Strong)
 8. Every rating above "None" has specific evidence (not generic claims)
