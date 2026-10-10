@@ -34,7 +34,7 @@ Determine which skill produced the artifact based on its structure and content:
 
 | Artifact Type | Key Indicators |
 |---|---|
-| Find your moat (thin pass) | Title "Find Your Moat", `Depth: Thin first pass`, four scored moat types, four marked "Not assessed", filename `…-find-moat-<slug>.md` |
+| Find your moat (thin pass) | Title "Find Your Moat", `Depth: Thin first pass`, four scored moat types, four screened Yes/No, filename `…-find-moat-<slug>.md` |
 | Strategy document | Executive summary, strategic pillars, vision/mission, KPIs |
 | Competitive landscape | Competitor profiles table, positioning map, whitespace |
 | VRIO analysis | VRIO matrix table, V/R/I/O assessments |
@@ -82,22 +82,29 @@ Apply the appropriate checklist based on artifact type.
 
 #### Find Your Moat (Thin Pass) Checks
 
-7. A real named product is documented (not a sample or fictional company)
-8. Only four moat types are scored (feedback loops, network effects, switching costs, unique data/tech); the other four are explicitly "Not assessed"
-9. Every rating above "None" has one specific evidence line
-10. Every scored type has one deepen idea
-11. So-what section has 3–5 bullets (strongest, weakest, competitor-copy risk, do-this-week)
-12. Document states it is **not** a complete defensibility assessment
-13. Do **not** fail for missing ethical check, all 8 types, or top-3 recommendations — those belong to full `strategic-moat`
+7. A real named product is documented (not a fictional company)
+8. Only four moat types are scored (feedback loops, network effects, switching costs, unique data/tech). Ecosystem lock-in, economies of scale, brand and trust, and regulatory barriers are screened Yes/No with one evidence line each — not rated and not left blank
+9. Every evidence line ends with `[user]`, `[public web]`, `[filing §Item X]`, or `[inference]`. Every number has `[user]`, `[public web]`, or `[filing §Item X]`
+10. Every rating above "None" has one specific evidence line
+11. Every scored type has one deepen idea
+12. So-what has 3–5 bullets: strongest scored, most-at-risk moat, competitor-copy risk, do-this-week. If any screen row is Yes, the first bullet is `Your strongest moat may be <type> — run strategic-moat to score it.`
+13. Most-at-risk moat is a moat the business depends on that is under threat. A None, or a screen No, that the business does not rely on is `N/A, not a dependency` on its row and is not the most-at-risk bullet
+14. Competitor-copy risk addresses the substitute the PM named, not only the named rivals
+15. Document states it is **not** a complete defensibility assessment
+16. Public-company mode cites the filing (form, date, accession), uses Item 1 competitors, and checks the strongest and most-at-risk moats against Item 1A. A private-product pass has no filing section — do not fail it for that
+17. Do **not** fail for missing ethical check, all 8 rated types, or top-3 recommendations — those belong to full `strategic-moat`
 
 #### Strategic Moat (Full)-Specific Checks
 
 7. All 8 moat types assessed with explicit ratings (None/Emerging/Moderate/Strong)
-8. Every rating above "None" has specific evidence (not generic claims)
-9. Every moat has at least one deepening opportunity identified
-10. Top 3 recommendations are concrete and actionable
-11. Overall defensibility verdict is candid and evidence-based
-12. Ethical check section is present with genuine reflection
+8. Every evidence line ends with `[user]`, `[public web]`, `[filing §Item X]`, or `[inference]`. Every number has `[user]`, `[public web]`, or `[filing §Item X]`
+9. Every rating above "None" has specific evidence (not generic claims)
+10. Every moat has at least one deepening opportunity identified
+11. Most-at-risk moat is a dependency under threat. A None the business does not rely on is `N/A, not a dependency` and is not that line. The line addresses the substitute when that substitute is the threat
+12. Top 3 recommendations are concrete and actionable, and at least one addresses the substitute
+13. Overall defensibility verdict is candid and evidence-based
+14. Ethical check section is present with genuine reflection
+15. Public-company mode records form, filing date, and accession number, uses Item 1 competitors, and checks the strongest and most-at-risk moats against Item 1A. A private-product assessment has no filing section — do not fail it for that
 
 #### Product Ecosystem-Specific Checks
 

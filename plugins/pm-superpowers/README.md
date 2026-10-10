@@ -6,7 +6,7 @@ Product strategy skills for PMs, grounded in structured frameworks for competiti
 
 ### find-your-moat
 
-Thin first-pass moat read on the user's real product. Scores four core types (feedback loops, network effects, switching costs, unique data/tech), marks the other four not assessed, and saves a short so-what. **Start here for first value** after install — not a complete defensibility assessment. For the full 8-type pass, use `strategic-moat`.
+Thin first-pass moat read on the user's real product. Scores four core types (feedback loops, network effects, switching costs, unique data/tech), screens the other four with a yes/no in case scale, brand, ecosystem, or regulation is the real primary moat, and saves a short so-what. **Start here for first value** after install — not a complete defensibility assessment. For the full 8-type pass, use `strategic-moat`. A public company can be checked against its latest 10-K or 20-F; a private product skips that.
 
 ### strategy (Main Orchestrator)
 
@@ -29,7 +29,7 @@ Standalone VRIO framework for evaluating resources and capabilities. Walks throu
 
 ### strategic-moat
 
-Defensibility assessment across 8 moat types: self-reinforcing feedback loops (Fogg B=MAP), network effects, switching costs, data advantages, ecosystem lock-in, economies of scale, brand/trust, and regulatory barriers. Includes an ethical check to balance engagement with user well-being.
+Defensibility assessment across 8 moat types: self-reinforcing feedback loops (Fogg B=MAP), network effects, switching costs, data advantages, ecosystem lock-in, economies of scale, brand/trust, and regulatory barriers. Names the most-at-risk moat (a dependency under threat) and includes an ethical check to balance engagement with user well-being. A public company can be checked against its latest 10-K or 20-F; a private product skips that.
 
 ### product-ecosystem
 
@@ -123,4 +123,4 @@ All artifacts are saved to the `docs/` directory:
 
 ## Sub-Agents
 
-- **competitive-researcher** — Automated competitive intelligence gathering via web search. Spawned by the strategy and competitive-landscape skills.
+- **competitive-researcher** — Automated competitive intelligence gathering via web search. Spawned by the strategy and competitive-landscape skills. Also fetches a public company's latest 10-K or 20-F when a moat skill turns on public-company mode.
