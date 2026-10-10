@@ -1,8 +1,68 @@
 <h1 align="center">PM Superpowers 🧭</h1>
 
 <p align="center">
-  <strong>A moat / defensibility machine — answer “what’s our moat?” in minutes. A plugin for Claude Code, Cursor, and Grok Bot.</strong>
+  <strong>Ask “what’s our moat?” about your own product and get a straight answer in about five minutes.</strong>
 </p>
+
+<!-- TODO(Ani): record demo/find-your-moat.gif by following demo/transcript.md, then commit it on this branch. The image below points at that path and will not render until the file is here. -->
+
+<p align="center">
+  <a href="examples/find-your-moat-linear.md">
+    <img width="1200" alt="find-your-moat on Linear, from a real run" src="demo/find-your-moat.gif">
+  </a>
+</p>
+<p align="center"><sub><em>find-your-moat on Linear, from a real run. About 25 seconds. <a href="examples/find-your-moat-linear.md">Read the write-up</a>.</em></sub></p>
+
+## Install
+
+**Claude Code**
+
+```bash
+claude plugin marketplace add aniganti/pm-superpowers
+claude plugin install pm-superpowers
+```
+
+Then ask `find my moat for <your product>`.
+
+**Cursor**
+
+```bash
+git clone --depth 1 https://github.com/aniganti/pm-superpowers.git /tmp/pms
+mkdir -p ~/.cursor/plugins/local && cp -R /tmp/pms/plugins/pm-superpowers ~/.cursor/plugins/local/pm-superpowers
+```
+
+Reload Cursor, then ask `find my moat for <your product>`.
+
+<details open>
+<summary><strong>What you get back</strong></summary>
+
+A thin first pass on Linear, from the same run. Four moat types scored, four left unmarked. Full write-up: [`examples/find-your-moat-linear.md`](examples/find-your-moat-linear.md).
+
+**Depth:** Thin first pass (4 of 8 types). Not a complete defensibility assessment.
+
+| Moat type | Rating | Evidence | Deepen |
+|---|---|---|---|
+| Feedback loops | Moderate | Filing or updating an issue does not wait on the network (Linear's public local-first sync writeup), and Cycles are the product's repeating cadence: the Method describes an n-week cycle as the routine where a team sets priorities and unfinished work rolls forward. | At the next cycle close, show one pre-filled line of customer-request issues finished that cycle, and see whether the team opens the cycle without a reminder. |
+| Network effects | Emerging | The public product is a workspace for one company and its agents. Another company's signup does not make this workspace better, and one more teammate adds ordinary collaboration that Jira and GitHub Issues already provide. | Invite one adjacent function (support or design) into a single workspace for one cycle and count whether weekly active issues rise. If they do not, treat this as seat expansion. |
+| Switching costs | Moderate | Linear's migration guide treats a move from Jira or GitHub Issues as an import plus a rewire of GitHub, Slack, and support tools, and offers two-way sync so a team can avoid a hard cutover. | On one team, write the exit inventory: issues that export, and cycle history plus automations that stay behind. Spend the week making cycle history and automations the reason a team stays. |
+| Unique data/tech | Emerging | The public sync-engine post documents a real local-first system, with the largest workspaces producing close to one million sync actions a day, and the public product does not show usage compounding into a dataset Jira or GitHub cannot assemble. | For one workspace, plot triage-suggestion accept rate against workspace age. If the rate is flat, the advantage is the engine's speed, not a data flywheel. |
+| Ecosystem lock-in | Not assessed | — | — |
+| Economies of scale | Not assessed | — | — |
+| Brand and trust | Not assessed | — | — |
+| Regulatory barriers | Not assessed | — | — |
+
+**So-what**
+
+- Strongest: Switching costs. A settled team leaves behind issue history, the cycle rhythm, and the GitHub, Slack, and support-tool wiring. The rating stays Moderate because Linear's own importers and two-way GitHub sync are a built-in way through that wall.
+- Weakest: Network effects. Value does not increase when another company adopts Linear. Inside one workspace, one more person is collaboration, which the two named competitors already provide.
+- Competitor-copy risk: High on the checklist GitHub can see. Linear's GitHub issue sync copies new issues into the system where the code already lives, so a team can plan in GitHub Projects and keep Linear as a mirror. Jira remains the suite teams buy when they want Atlassian's breadth. Local-first speed and the cycle habit are the parts with a slower copy.
+- Do this week: On one team, turn on two-way GitHub Issues sync for a single cycle and watch where planning actually happens. If the cycle review stays in Linear, keep sync as an issue mirror. If planning moves to GitHub, move the cycle review back into Linear so the GitHub copy stays issues only.
+
+</details>
+
+[![GitHub stars](https://img.shields.io/github/stars/aniganti/pm-superpowers?style=social)](https://github.com/aniganti/pm-superpowers/stargazers)
+
+If that was useful on your product, a ⭐ helps other PMs find it.
 
 <p align="center">
   <a href="#whats-inside">Skills</a> ·
@@ -14,13 +74,9 @@
 </p>
 
 <p align="center">
-  <img width="2808" height="1280" alt="pm-superpowers-grid" src="https://github.com/user-attachments/assets/1168879e-0b0d-485a-841a-dce2fdefa47d">
+  <img width="900" alt="pm-superpowers-grid" src="https://github.com/user-attachments/assets/1168879e-0b0d-485a-841a-dce2fdefa47d">
 </p>
 <p align="center"><sub><em>Thirteen skills, one sub-agent, zero prompt engineering.</em></sub></p>
-
-[![GitHub stars](https://img.shields.io/github/stars/aniganti/pm-superpowers?style=social)](https://github.com/aniganti/pm-superpowers/stargazers)
-
-<p align="center"><strong>Star the repo if this saves you an afternoon.</strong></p>
 
 ---
 
@@ -64,20 +120,32 @@ Then ask "find my moat" for a thin first-pass read on your product. For a skill 
 
 ### Cursor / Grok Bot
 
-Install **PM Superpowers** from the Cursor marketplace (Plugins) after the listing is published or updated. Search for `pm-superpowers`, install it, then ask "find my moat" for a thin first-pass read on your product. For a skill menu, ask "skill guide."
+Install from a local copy. This works today:
 
-The same GitHub repo powers that listing. Cursor discovers skills from `plugins/pm-superpowers/skills/` via `.cursor-plugin` manifests — Claude Code continues to use `.claude-plugin`.
+```bash
+git clone --depth 1 https://github.com/aniganti/pm-superpowers.git /tmp/pms
+mkdir -p ~/.cursor/plugins/local && cp -R /tmp/pms/plugins/pm-superpowers ~/.cursor/plugins/local/pm-superpowers
+```
 
-To smoke-test a local checkout before (or instead of) marketplace install:
+Reload Cursor, then ask "find my moat" for a thin first-pass read on your product. For a skill menu, ask "skill guide."
+
+The same GitHub repo powers Claude Code and Cursor. Cursor discovers skills from `plugins/pm-superpowers/skills/` via `.cursor-plugin` manifests — Claude Code continues to use `.claude-plugin`.
+
+<details>
+<summary><strong>Cursor local-copy notes</strong></summary>
+
+Copy the plugin directory rather than symlinking the git checkout; Cursor skips symlinks that point outside `~/.cursor/plugins/local`. Reload Cursor (Developer: Reload Window) and confirm the skills appear under Plugins / Customize. This copy includes `.cursor-plugin/plugin.json`, `skills/`, and `agents/`. Repo-root `references/` is shared documentation, not required for Cursor skill discovery.
+
+From a checkout you already have, the same copy is:
 
 ```bash
 mkdir -p ~/.cursor/plugins/local
 cp -R plugins/pm-superpowers ~/.cursor/plugins/local/pm-superpowers
 ```
 
-Copy the plugin directory rather than symlinking the git checkout; Cursor skips symlinks that point outside `~/.cursor/plugins/local`. Reload Cursor (Developer: Reload Window) and confirm the skills appear under Plugins / Customize. This copy includes `.cursor-plugin/plugin.json`, `skills/`, and `agents/`. Repo-root `references/` is shared documentation, not required for Cursor skill discovery.
-
 To update the public Cursor listing, submit this repo at [cursor.com/marketplace/publish](https://cursor.com/marketplace/publish). Do not create a second marketplace.
+
+</details>
 
 Live X/Twitter research is a separate, optional Claude/Hermes companion — see [Companion plugin](#companion-plugin). You do not need it to use PM Superpowers.
 
@@ -160,7 +228,7 @@ Keep `XQUIK_API_KEY` in the Hermes runtime, not in chat, prompts, or this repo. 
 | 13 skills across strategy, planning, and alignment | Deeper workflow chaining between skills (auto-suggest next step) | Skills for OKR authoring and quarterly planning |
 | 1 sub-agent for competitive research | Richer verification checklists per artifact type | Multi-product / portfolio-level strategy rollups |
 | Optional docs-only companion for Hermes X/Twitter research | More worked examples in `references/` | Native integrations with roadmap tools (Jira, Linear) |
-| Marketplace install via `claude plugin` and Cursor Plugins | | |
+| Claude Code via `claude plugin`; Cursor via the local copy at the top of this page | | |
 
 <sub>The 💭 column is intent, not a promise — see <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> if you want to help build it.</sub>
 
