@@ -93,11 +93,11 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) — new skills, new frameworks, agents, a
 
 | Skill | What it does |
 |---|---|
-| `find-your-moat` | Thin first-pass moat read on your product — four core types, a short so-what, and a saved artifact. **Start here for first value.** |
+| `find-your-moat` | Thin first-pass moat read on your product — four types scored, all eight screened, a short so-what, and a saved artifact. **Start here for first value.** Not a full defensibility assessment. |
 | `strategy` | Full 6-step interactive workflow: market analysis → problem space → strategic pillars (VRIO) → design/technical alignment → vision/mission/goals → communicate |
 | `competitive-landscape` | Standalone competitor analysis with automated web research via sub-agent |
 | `vrio-analysis` | VRIO framework competitive advantage evaluation — Value, Rarity, Imitability, Organization — applied to your specific product |
-| `strategic-moat` | Full defensibility assessment across 8 moat types including network effects, feedback loops, and ecosystem lock-in |
+| `strategic-moat` | Full defensibility assessment across 8 moat types, including the most-at-risk moat. Optional 10-K / 20-F check when the product is a public company |
 | `product-ecosystem` | Aggregation theory and value chain analysis for platform/ecosystem strategy |
 
 ### Planning & execution skills
@@ -126,7 +126,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) — new skills, new frameworks, agents, a
 
 | Agent | What it does |
 |---|---|
-| `competitive-researcher` | Automated competitive intelligence gathering via web research |
+| `competitive-researcher` | Automated competitive intelligence gathering via web research, plus a public-company 10-K or 20-F fetch when a moat skill asks |
 
 ---
 
