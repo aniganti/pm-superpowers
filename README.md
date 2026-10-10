@@ -4,14 +4,12 @@
   <strong>Ask “what’s our moat?” about your own product and get a straight answer in about five minutes.</strong>
 </p>
 
-<!-- TODO(Ani): record demo/find-your-moat.gif by following demo/transcript.md, then commit it on this branch. The image below points at that path and will not render until the file is here. -->
-
 <p align="center">
   <a href="examples/find-your-moat-linear.md">
     <img width="1200" alt="find-your-moat on Linear, from a real run" src="demo/find-your-moat.gif">
   </a>
 </p>
-<p align="center"><sub><em>find-your-moat on Linear, from a real run. About 25 seconds. <a href="examples/find-your-moat-linear.md">Read the write-up</a>.</em></sub></p>
+<p align="center"><sub><em>Replayed from a real find-your-moat run (30s).</em></sub></p>
 
 ## Install
 
