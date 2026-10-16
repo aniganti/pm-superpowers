@@ -8,6 +8,25 @@
     "description": "Product strategy skills for product managers, packaged for Cursor and Grok Bot",
     "version": "2.0.0"
   },
+  "description": "Product strategy skills for PMs: find-your-moat front door, 6-step strategy framework, competitive landscape analysis, VRIO, strategic moats, product ecosystem strategy, pre-mortem risk analysis, AI prompt builder, verification, stakeholder alignment, decision log, and prioritization",
+  "version": "2.0.0",
+  "logo": "https://raw.githubusercontent.com/aniganti/pm-superpowers/main/plugins/pm-superpowers/assets/logo.svg",
+  "license": "MIT",
+  "homepage": "https://github.com/aniganti/pm-superpowers",
+  "keywords": [
+    "product-strategy",
+    "find-your-moat",
+    "competitive-analysis",
+    "vrio",
+    "moats",
+    "ecosystem",
+    "pre-mortem",
+    "prompt-builder",
+    "verification",
+    "stakeholder-alignment",
+    "decision-log",
+    "prioritization"
+  ],
   "plugins": [
     {
       "name": "pm-superpowers",
@@ -20,7 +39,7 @@
       "homepage": "https://github.com/aniganti/pm-superpowers",
       "repository": "https://github.com/aniganti/pm-superpowers",
       "license": "MIT",
-      "logo": "assets/logo.svg",
+      "logo": "https://raw.githubusercontent.com/aniganti/pm-superpowers/main/plugins/pm-superpowers/assets/logo.svg",
       "keywords": [
         "product-management",
         "find-your-moat",
