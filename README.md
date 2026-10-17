@@ -9,7 +9,7 @@
     <img width="1200" alt="find-your-moat on Linear, from a real run" src="demo/find-your-moat.gif">
   </a>
 </p>
-<p align="center"><sub><em>The recording is the 2026-10-10 run (30s). The tables below are the 2026-10-17 re-run.</em></sub></p>
+<p align="center"><sub><em>Current recording of the re-run Linear example (about 33s).</em></sub></p>
 
 ## Install
 
