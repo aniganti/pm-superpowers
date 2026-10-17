@@ -18,11 +18,11 @@ This skill was formerly `using-pm-superpowers`.
 
 | Skill | What It Does | Best For |
 |---|---|---|
-| **find-your-moat** | Thin first-pass moat read on the user's real product (4 of 8 types) | **Start here for first value** — just installed, "find my moat", or "where do I start" when they want a real pass not a menu |
+| **find-your-moat** | Thin first-pass moat read: 4 types scored, all 8 screened. Not a full defensibility assessment | **Start here for first value** — just installed, "find my moat", or "where do I start" when they want a real pass not a menu |
 | **strategy** | Interactive 6-step product strategy framework (Rumelt's kernel) | Building a comprehensive product strategy from scratch or reviewing an existing one |
 | **competitive-landscape** | Competitor profiling, positioning maps, whitespace identification | Understanding your competitive environment and finding opportunities |
 | **vrio-analysis** | Assess resources/capabilities for sustained competitive advantage | Evaluating which internal strengths are truly defensible |
-| **strategic-moat** | Defensibility assessment across 8 moat types | **Full defensibility** — complete 8-type assessment and how to deepen moats |
+| **strategic-moat** | Defensibility assessment across 8 moat types, including the most-at-risk moat | **Full defensibility** — complete 8-type assessment and how to deepen moats |
 | **product-ecosystem** | Value chain mapping, integration opportunities, portfolio coherence | Analyzing your product's position in the broader ecosystem |
 | **pre-mortem** | Risk analysis with Tigers/Paper Tigers/Elephants framework | Stress-testing a product launch or major initiative before it ships |
 | **prompt-builder** | Guided AI prompt creation through 9 structured questions | Crafting effective prompts for any AI tool |
